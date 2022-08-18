@@ -1,13 +1,55 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #0098ff;
+  --secondary-color: #0063ff;
+  --thirdly-color: #fdfdfd;
+  --fourthly-color: #1b262c;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.linkContainer:hover .icons {
+  padding: 12px 0;
+  border-bottom: 2px solid #ffff;
+  border-radius: 1px;
+}
+
+.linkContainer:focus .icons {
+  padding: 12px 0;
+  border-bottom: 2px solid #ffff;
+  border-radius: 1px;
+}
+
+.custom-gradient {
+  background: linear-gradient(
+    265.63deg,
+    rgba(255, 255, 255, 0.1) -12.06%,
+    rgba(255, 255, 255, 0) 111.31%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.swiper-button-next {
+  background-image: url(./assets/svg/LeftSliderArrow.svg);
+  background-repeat: no-repeat;
+  background-size: 7px;
+  background-position: center;
+}
+
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-prev {
+  background-image: url(./assets/svg/RightSliderArrow.svg);
+  background-repeat: no-repeat;
+  background-size: 7px;
+  background-position: center;
+}
+
+.swiper-button-prev::after {
+  display: none;
 }
