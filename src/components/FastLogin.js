@@ -1,8 +1,8 @@
 import React from "react";
-import SignupCoverTop from "../../assets/svg/SignupCoverTop";
-import SignupCoverBottom from "../../assets/svg/SignupCoverBottom";
+import SignupCoverTop from "../assets/svg/SignupCoverTop";
+import SignupCoverBottom from "../assets/svg/SignupCoverBottom";
 
-const FastSignup = () => {
+const FastLogin = () => {
   return (
     <>
       <SignupCoverTop />
@@ -36,4 +36,4 @@ const FastSignup = () => {
   );
 };
 
-export default FastSignup;
+export default FastLogin;

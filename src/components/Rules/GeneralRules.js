@@ -1,90 +1,81 @@
 import React, { useState } from "react";
 
-const PopularQuestions = () => {
-  const [isQuestionOne, SetIsQuestionOne] = useState(true);
-  const [isQuestionTwo, SetIsQuestionTwo] = useState(false);
-  const [isQuestionThree, SetIsQuestionThree] = useState(false);
-  const [isQuestionFour, SetIsQuestionFour] = useState(false);
+const GeneralRules = () => {
+  const [isRuleOne, setIsRuleOne] = useState(true);
+  const [isRuleTwo, setIsRuleTwo] = useState(false);
+  const [isRuleThree, setIsRuleThree] = useState(false);
+  const [isRuleFour, setIsRuleFour] = useState(false);
 
   return (
-    <section className="w-full mb-[109px] px-[72px]">
-      <div className="flex justify-between items-center gap-[40px] mb-[46px]">
-        <p className="text-[34px] font-extrabold whitespace-nowrap">
-          سوالات <span className="font-light">متداول</span>
-        </p>
+    <section className="w-full px-[72px]">
+      <div className="flex items-center gap-[32px] mb-[35px]">
+        <div className="text-secondary-bg-color text-[32px] font-extrabold whitespace-nowrap">
+          قوانین کلی <span className="font-light">سایت</span>
+        </div>
         <div className="w-full h-[1px] bg-[#E8E8E8]" />
-        <button className="text-[#C7C7C7] border rounded-[10px] whitespace-nowrap px-[30px] py-[18px]">
-          سوالات بیشتر
-        </button>
       </div>
-      <div className="flex justify-between gap-[46px]">
+      <div className="flex justify-between gap-[46px] mb-[70px]">
         <div className="flex flex-col items-center space-y-[20px]">
           <button
             className={`text-sm font-bold rounded-[10px] shadow-[5px_5px_40px_rgba(0,0,0,0.05)] px-[60px] py-[20px] ${
-              isQuestionOne
+              isRuleOne
                 ? "text-white bg-primary-btn-color"
                 : "text-[#767D80] bg-white"
             }`}
             onClick={() => {
-              SetIsQuestionOne(true);
-              SetIsQuestionTwo(false);
-              SetIsQuestionThree(false);
-              SetIsQuestionFour(false);
+              setIsRuleOne(true);
+              setIsRuleTwo(false);
+              setIsRuleThree(false);
+              setIsRuleFour(false);
             }}
           >
-            <div className="w-[406px]">
-              چرا باید از سرمایه گذار برتر استفاده کنیم؟
-            </div>
+            <div className="w-[406px]">زمان چلنج</div>
           </button>
           <button
             className={`text-sm font-bold rounded-[10px] shadow-[5px_5px_40px_rgba(0,0,0,0.05)] px-[60px] py-[20px] ${
-              isQuestionTwo
+              isRuleTwo
                 ? "text-white bg-primary-btn-color"
                 : "text-[#767D80] bg-white"
             }`}
             onClick={() => {
-              SetIsQuestionOne(false);
-              SetIsQuestionTwo(true);
-              SetIsQuestionThree(false);
-              SetIsQuestionFour(false);
+              setIsRuleOne(false);
+              setIsRuleTwo(true);
+              setIsRuleThree(false);
+              setIsRuleFour(false);
             }}
           >
-            <div className="w-[406px]">
-              چرا باید از سرمایه گذار برتر استفاده کنیم؟
-            </div>
+            <div className="w-[406px]">تارگت های سودمند یا هدف ها</div>
           </button>
           <button
             className={`text-sm font-bold rounded-[10px] shadow-[5px_5px_40px_rgba(0,0,0,0.05)] px-[60px] py-[20px] ${
-              isQuestionThree
+              isRuleThree
                 ? "text-white bg-primary-btn-color"
                 : "text-[#767D80] bg-white"
             }`}
             onClick={() => {
-              SetIsQuestionOne(false);
-              SetIsQuestionTwo(false);
-              SetIsQuestionThree(true);
-              SetIsQuestionFour(false);
+              setIsRuleOne(false);
+              setIsRuleTwo(false);
+              setIsRuleThree(true);
+              setIsRuleFour(false);
             }}
           >
-            <div className="w-[406px]">
-              چرا باید از سرمایه گذار برتر استفاده کنیم؟
-            </div>
+            <div className="w-[406px]">اُفت حساب</div>
           </button>
           <button
             className={`text-sm font-bold rounded-[10px] shadow-[5px_5px_40px_rgba(0,0,0,0.05)] px-[60px] py-[20px] ${
-              isQuestionFour
+              isRuleFour
                 ? "text-white bg-primary-btn-color"
                 : "text-[#767D80] bg-white"
             }`}
             onClick={() => {
-              SetIsQuestionOne(false);
-              SetIsQuestionTwo(false);
-              SetIsQuestionThree(false);
-              SetIsQuestionFour(true);
+              setIsRuleOne(false);
+              setIsRuleTwo(false);
+              setIsRuleThree(false);
+              setIsRuleFour(true);
             }}
           >
             <div className="w-[406px]">
-              چرا باید از سرمایه گذار برتر استفاده کنیم؟
+              حداقل روزهای معاملاتی در هر مرحله چقدر است؟
             </div>
           </button>
         </div>
@@ -107,4 +98,4 @@ const PopularQuestions = () => {
   );
 };
 
-export default PopularQuestions;
+export default GeneralRules

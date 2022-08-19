@@ -34,7 +34,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              to={"/"}
+              to={"/plans"}
               className="flex items-center gap-[7px] linkContainer"
             >
               <div className="icons transition-all">
@@ -45,7 +45,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              to={"/"}
+              to={"/rules"}
               className="flex items-center gap-[7px] linkContainer"
             >
               <div className="icons transition-all">
@@ -56,7 +56,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              to={"/"}
+              to={"/aboutus"}
               className="flex items-center gap-[7px] linkContainer"
             >
               <div className="icons transition-all">
@@ -67,7 +67,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              to={"/"}
+              to={"/contactus"}
               className="flex items-center gap-[7px] linkContainer"
             >
               <div className="icons transition-all">
@@ -78,7 +78,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              to={"/"}
+              to={"/blogs"}
               className="flex items-center gap-[7px] linkContainer"
             >
               <div className="icons transition-all">
@@ -89,7 +89,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              to={"/"}
+              to={"/leaderbord"}
               className="flex items-center gap-[7px] linkContainer"
             >
               <div className="icons transition-all">

@@ -43,7 +43,7 @@ const StepsToWorkSite = () => {
             <div className="absolute top-[-13%] left-1/2 -translate-x-1/2 flex flex-col justify-center w-[108px] h-[108px] rounded-full bg-white shadow-[5px_5px_40px_rgba(0,0,0,0.05)]">
               <div className="text-center text-xl leading-[30px]">
                 <div>مرحله</div>
-                <div>اول</div>
+                <div>دوم</div>
               </div>
             </div>
             <p className="text-xl font-extrabold leading-[40px]">
@@ -67,7 +67,7 @@ const StepsToWorkSite = () => {
             <div className="absolute top-[-13%] left-1/2 -translate-x-1/2 flex flex-col justify-center w-[108px] h-[108px] rounded-full bg-white shadow-[5px_5px_40px_rgba(0,0,0,0.05)]">
               <div className="text-center text-xl leading-[30px]">
                 <div>مرحله</div>
-                <div>اول</div>
+                <div>سوم</div>
               </div>
             </div>
             <p className="text-xl font-extrabold leading-[40px]">

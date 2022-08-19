@@ -8,7 +8,7 @@ import PopularPlatforms from "../components/home/PopularPlatforms";
 import TradersPanelPoster from "../components/home/TradersPanelPoster";
 import PopularQuestions from "../components/home/PopularQuestions";
 import StepsToWorkSite from "../components/home/StepsToWorkSite";
-import FastSignup from "../components/home/FastSignup";
+import FastLogin from "../components/FastLogin";
 import BlogContent from "../components/home/BlogContent";
 
 const Home = () => {
@@ -23,7 +23,7 @@ const Home = () => {
       <TradersPanelPoster />
       <PopularQuestions />
       <StepsToWorkSite />
-      <FastSignup />
+      <FastLogin />
       <BlogContent />
     </div>
   );
