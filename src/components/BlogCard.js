@@ -5,7 +5,7 @@ const BlogCard = () => {
   return (
     <div className="w-full bg-white rounded-[20px] shadow-[5px_5px_40px_rgba(0,0,0,0.05)] p-[15px]">
       <img
-        className="w-full rounded-[20px]"
+        className="w-full rounded-[10px]"
         src={require("../assets/img/BlogImage.png")}
         alt="Blog Image"
       />

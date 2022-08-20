@@ -13,7 +13,7 @@ import BlogContent from "../components/home/BlogContent";
 
 const Home = () => {
   return (
-    <div className="w-full bg-primary-bg-color">
+    <section className="w-full bg-primary-bg-color">
       <Header />
       <SarmayeGozarFeatures />
       <AboutCompony />
@@ -25,7 +25,7 @@ const Home = () => {
       <StepsToWorkSite />
       <FastLogin />
       <BlogContent />
-    </div>
+    </section>
   );
 };
 
