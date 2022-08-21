@@ -1,8 +1,11 @@
 import React from 'react'
+import InfoHeader from '../components/plans/InfoHeader'
 
 const Plans = () => {
   return (
-    <div>Plans</div>
+    <section className="w-full bg-primary-bg-color">
+      <InfoHeader />
+    </section>
   )
 }
 
