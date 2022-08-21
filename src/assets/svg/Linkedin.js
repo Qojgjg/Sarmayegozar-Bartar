@@ -6,7 +6,7 @@ export default () => (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g clipRath="url(#clip0_47_159)">
+    <g cliprath="url(#clip0_47_159)">
       <path
         fillRule="evenodd"
         clipRule="evenodd"

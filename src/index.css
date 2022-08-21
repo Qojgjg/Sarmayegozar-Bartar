@@ -59,10 +59,11 @@
     url("./assets/font/IRANYekanWebRegular.woff2") format("woff2"),
     url("./assets/font/IRANYekanWebThin.woff2") format("woff2"),
 }
+*/
 *,
 body {
   font-family: IRANYekan;
-} */
+} 
 
 :root {
   --primary-color: #0098ff;

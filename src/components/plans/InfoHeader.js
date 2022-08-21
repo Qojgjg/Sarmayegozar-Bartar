@@ -1,7 +1,7 @@
 import React from "react";
 import ButtonOfScrollTo from "../../assets/svg/ButtonOfScrollTo";
-import DashedBorderPlans from "../../assets/svg/DashedBorderPlans";
-import PlansIconFill from "../../assets/svg/PlansIconFill";
+import DashedBorderPlans from "../../assets/svg/PlansDashedBorder";
+import PlansIconFill from "../../assets/svg/PlansIcons";
 
 const InfoHeader = () => {
   return (
@@ -26,9 +26,35 @@ const InfoHeader = () => {
               <div className="absolute top-[133px] left-[711px]">
                 <PlansIconFill />
               </div>
+              <div className="absolute top-[133px] left-[496px]">
+              <PlansIconFill
+                color="black"
+                bgColor="white"
+                />
+              </div>
+                <div className="absolute top-[458.48px] left-[281px]">
+                <PlansIconFill />
+              </div>
+              <div className="absolute top-[458.48px] left-[711px]">
+                <PlansIconFill />
+              </div>
+              <div className="absolute top-[458.48px] left-[496px]">
+              <PlansIconFill/>
+              </div>
+                <div className="absolute top-[133px] left-[281px]">
+                <PlansIconFill />
+              </div>
+              <p className="w-[440.57px] h-[35.96px] absolute font-bold text-black text-[18px] leading-[40px] top-[259.70px] left-[317.71px]">
+              پایین ترین اهداف در بازار!
+              </p>
+              <p className="absolute w-[490px] h-[140px] top-[291px] left-[293px] leading-[35px] text-[14px] font-medium text-[#767D80]">
+                سرمایه گذار برتر در راستای تامین سرمایه معامله گران
+                برای ترید در بازارهای مالی با حداقل ریسک ممکن تشکیل شده و در این راه خدماتی را به تریدرها ارائه میکند
+                سرمایه گذار برتر در راستای تامین سرمایه معامله گران برای ترید سرمایه گذار برتر در راستای تامین سرمایه.
+              </p>
             </div>
           </div>
-          <div className="absolute left-1/2 -translate-x-1/2 bottom-[-23%]">
+          <div className="absolute left-1/2 -translate-x-1/2 top-[615px]">
             <ButtonOfScrollTo />
           </div>
         </div>
