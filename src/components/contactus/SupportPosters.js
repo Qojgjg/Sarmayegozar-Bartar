@@ -12,7 +12,7 @@ const SupportPosters = () => {
           <div className="w-[354px] h-[58px] bg-gradient-to-l from-[rgba(236,236,236,1)] to-[rgba(236,236,236,0)] rounded-[10px] p-[1px]">
             <div className="w-full h-full flex items-center bg-white rounded-[10px] px-[19px] py-[17px] gap-[14px]">
               <span className="text-primary-btn-color text-sm font-extrabold">پشتیبان شماره ۱</span>
-              <span className="text-[#BBBBBB] text-xs font-bold">SGB_TECHNICALSUPPORT@</span>
+              <span className="text-[#BBBBBB] text-xs font-light">SGB_TECHNICALSUPPORT@</span>
               <div className="w-[52px] h-[50px] flex flex-col justify-center bg-primary-btn-color rounded-[10px]">
                 <img className="w-[24px] mx-auto" src={require("../../assets/img/Telegram.png")} alt="Telegram" />
               </div>
