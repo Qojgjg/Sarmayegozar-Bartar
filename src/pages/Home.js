@@ -1,4 +1,5 @@
 import React from "react";
+import useTitle from "../hooks/useTitle"
 import Header from "../components/home/Header";
 import SarmayeGozarFeatures from "../components/home/SarmayeGozarFeatures";
 import AboutCompony from "../components/home/AboutCompony";
@@ -12,6 +13,8 @@ import FastLogin from "../components/FastLogin";
 import BlogContent from "../components/home/BlogContent";
 
 const Home = () => {
+  useTitle("صفحه اصلی")
+  
   return (
     <section className="w-full bg-primary-bg-color">
       <Header />

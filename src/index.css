@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: IRANYekan;
+  src: url("./assets/font/IRANYekanWebMedium.eot") format("eot"),
+    url("./assets/font/IRANYekanWebMedium.woff") format("woff"),
+    url("./assets/font/IRANYekanWebMedium.woff2") format("woff2");
+}
+*,
+body {
+  font-family: IRANYekan;
+}
+
 :root {
   --primary-color: #0098ff;
   --secondary-color: #0063ff;
