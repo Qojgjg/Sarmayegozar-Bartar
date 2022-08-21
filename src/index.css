@@ -2,7 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
+@layer base {
+  html {
+    font-family: IRANYekan;
+  src: url("./assets/font/IRANYekanWebMedium.eot") format("eot"),
+    url("./assets/font/IRANYekanWebBlack.eot") format("eot"),
+    url("./assets/font/IRANYekanWebBold.eot") format("eot"),
+    url("./assets/font/IRANYekanWebExtraBlack.eot") format("eot"),
+    url("./assets/font/IRANYekanWebExtraBold.eot") format("eot"),
+    url("./assets/font/IRANYekanWebLight.eot") format("eot"),
+    url("./assets/font/IRANYekanWebRegular.eot") format("eot"),
+    url("./assets/font/IRANYekanWebThin.eot") format("eot"),
+    url("./assets/font/IRANYekanWebMedium.woff") format("woff"),
+    url("./assets/font/IRANYekanWebBlack.woff") format("woff"),
+    url("./assets/font/IRANYekanWebBold.woff") format("woff"),
+    url("./assets/font/IRANYekanWebExtraBlack.woff") format("woff"),
+    url("./assets/font/IRANYekanWebExtraBold.woff") format("woff"),
+    url("./assets/font/IRANYekanWebLight.woff") format("woff"),
+    url("./assets/font/IRANYekanWebRegular.woff") format("woff"),
+    url("./assets/font/IRANYekanWebThin.woff") format("woff"),
+    url("./assets/font/IRANYekanWebMedium.woff2") format("woff2"),
+    url("./assets/font/IRANYekanWebBlack.woff2") format("woff2"),
+    url("./assets/font/IRANYekanWebBold.woff2") format("woff2"),
+    url("./assets/font/IRANYekanWebExtraBlack.woff2") format("woff2"),
+    url("./assets/font/IRANYekanWebExtraBold.woff2") format("woff2"),
+    url("./assets/font/IRANYekanWebLight.woff2") format("woff2"),
+    url("./assets/font/IRANYekanWebRegular.woff2") format("woff2"),
+    url("./assets/font/IRANYekanWebThin.woff2") format("woff2"),
+  }
+}
+
+/* @font-face {
   font-family: IRANYekan;
   src: url("./assets/font/IRANYekanWebMedium.eot") format("eot"),
     url("./assets/font/IRANYekanWebBlack.eot") format("eot"),
@@ -32,7 +62,7 @@
 *,
 body {
   font-family: IRANYekan;
-}
+} */
 
 :root {
   --primary-color: #0098ff;
