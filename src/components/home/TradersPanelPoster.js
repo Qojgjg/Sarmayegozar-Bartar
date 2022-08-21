@@ -3,7 +3,7 @@ import React from "react";
 const TradersPanelPoster = () => {
   return (
     <>
-      <div className="grid grid-cols-2 px-[72px]">
+      <div className="grid grid-cols-2 items-center px-[72px]">
         <div className="w-full col-span-1">
           <h4 className="text-5xl leading-[70px] mb-[14px] ">
             <p className="font-extrabold">پنل حرفه ای</p>
@@ -18,9 +18,19 @@ const TradersPanelPoster = () => {
             ورود به پنل
           </button>
         </div>
-        <div className="w-full col-span-1">poster</div>
+        <div className="w-full col-span-1">
+          <img
+            className="w-full"
+            src={require("../../assets/img/Login-dashboard-poster.png")}
+            alt="Login-dashboard-poster"
+          />
+        </div>
       </div>
-      <img className="w-full mx-auto mt-10" src={require("../../assets/img/Support.png")} alt="Support" />
+      <img
+        className="w-full mx-auto mt-10"
+        src={require("../../assets/img/Support.png")}
+        alt="Support"
+      />
     </>
   );
 };
