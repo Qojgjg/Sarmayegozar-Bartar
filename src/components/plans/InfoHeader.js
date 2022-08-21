@@ -44,7 +44,7 @@ const InfoHeader = () => {
                 <div className="absolute top-[133px] left-[281px]">
                 <PlansIconFill />
               </div>
-              <p className="w-[440.57px] h-[35.96px] absolute font-bold text-black text-[18px] leading-[40px] top-[259.70px] left-[317.71px]">
+              <p className="w-[440.57px] h-[35.96px] absolute font-bold mb-1 text-black text-[18px] leading-[40px] top-[259.70px] left-[317.71px]">
               پایین ترین اهداف در بازار!
               </p>
               <p className="absolute w-[490px] h-[140px] top-[291px] left-[293px] leading-[35px] text-[14px] font-medium text-[#767D80]">
