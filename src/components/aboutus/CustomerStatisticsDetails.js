@@ -4,6 +4,12 @@ import AddUser from "../../assets/svg/AddUser";
 import Ranking from "../../assets/svg/Ranking";
 import UserInOctagon from "../../assets/svg/UserInOctagon";
 import LampCharge from "../../assets/svg/LampCharge";
+import TopFrameVideo from "../../assets/svg/TopFrameVideo";
+import BottomFrameVideo from "../../assets/svg/BottomFrameVideo";
+import ArrowLeftVideo from "../../assets/svg/ArrowLeftVideo";
+import ArrowRightVideo from "../../assets/svg/ArrowRightVideo";
+import VideoPaginate from "../../assets/svg/VideoPaginate";
+import Play from "../../assets/svg/Play";
 
 const CustomerStatisticsDetails = () => {
   return (
@@ -46,7 +52,33 @@ const CustomerStatisticsDetails = () => {
         </button>
       </div>
       <div className="w-[636px] h-[371px] bg-white rounded-[20px] shadow-[5px_5px_40px_rgba(0,0,0,0.05)]">
-        video
+      <div className="w-[636px] h-[371px] relative bg-white rounded-[20px] shadow-[5px_5px_40px_rgba(0,0,0,0.05)] p-[30px]">
+          <div className="absolute top-[30px] left-1/2 -translate-x-1/2 z-10">
+            <TopFrameVideo />
+          </div>
+          <p className="absolute top-[30px] left-1/2 -translate-x-1/2 z-10 text-[#1B262C] text-xl font-extrabold">
+            دیدگاه مشتریان <span className="font-light">درباره ما</span>
+          </p>
+          <div className="absolute bottom-[30px] left-1/2 -translate-x-1/2 z-10">
+            <BottomFrameVideo />
+          </div>
+          <div className="absolute bottom-[30px] left-1/2 -translate-x-1/2 z-10">
+            <div className="w-[237px] flex justify-between items-center gap-[35px]">
+              <ArrowRightVideo />
+              <VideoPaginate />
+              <ArrowLeftVideo />
+            </div>
+          </div>
+          <img
+            className="w-full rounded-[10px]"
+            src={require("../../assets/img/video-cover-image.png")}
+            alt="video cover image"
+          />
+          <div className="w-[576px] h-[311px] absolute top-[30px] right-[30px] bg-[#1B262C] bg-opacity-50 rounded-[10px]" />
+          <div className="absolute top-1/2 left-1/2 bg-[rgba(217,217,217,0.1)] rounded-full -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-[rgba(255,255,255,0.1)] to-[rgba(217,217,217,0.1)] backdrop-blur-[20px] px-[27px] py-[25px]">
+            <Play />
+          </div>
+        </div>
       </div>
     </section>
   );
