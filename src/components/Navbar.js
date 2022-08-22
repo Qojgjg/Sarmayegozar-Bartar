@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import SiteLogo from "../assets/svg/SiteLogo";
 import Home from "../assets/svg/Home";
 import Box from "../assets/svg/Box";
@@ -11,6 +11,8 @@ import People from "../assets/svg/People";
 import User from "../assets/svg/User";
 
 const Navbar = () => {
+  const navigate = useNavigate();
+
   return (
     <nav className="w-full bg-secondary-bg-color text-white px-[72px] py-[40px]">
       <div className="flex justify-between items-center">
@@ -100,7 +102,10 @@ const Navbar = () => {
           </li>
         </ul>
         <div className="flex items-center gap-2">
-          <button className="flex items-center border border-white hover:bg-white transition-all hover:text-secondary-bg-color rounded-[10px] px-5 py-[5px] gap-[7px]">
+          <button
+            onClick={() => navigate("/login")}
+            className="flex items-center border border-white hover:bg-white transition-all hover:text-secondary-bg-color rounded-[10px] px-5 py-[5px] gap-[7px]"
+          >
             <User /> <span>ورود / ثبت نام</span>
           </button>
           <button className="border border-white rounded-[10px] px-5 py-[5px]">

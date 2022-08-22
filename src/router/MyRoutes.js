@@ -9,6 +9,7 @@ import ContactUs from "../pages/ContactUs";
 import Blogs from "../pages/Blogs";
 import LeaderBord from "../pages/LeaderBord";
 import SingleBlog from "../pages/SingleBlog";
+import Login from "../pages/Login";
 
 const MyRoutes = () => {
   return (
@@ -22,6 +23,7 @@ const MyRoutes = () => {
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/blogs/:id" element={<SingleBlog />} />
         <Route path="/leaderbord" element={<LeaderBord />} />
+        <Route path="/login" element={<Login />} />
       </Route>
     </Routes>
   );

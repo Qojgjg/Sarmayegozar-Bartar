@@ -36,7 +36,7 @@ const FastLogin = () => {
             placeholder="رمز عبور"
             value={userData.password}
             onChange={(e) =>
-              setUserData({ ...userData, password: Number(e.target.value) })
+              setUserData({ ...userData, password: e.target.value })
             }
             className="w-full bg-[#F3F3F3] rounded-[10px] px-[20px] py-[18px]"
           />
