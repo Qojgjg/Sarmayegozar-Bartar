@@ -1,6 +1,9 @@
-import React from "react";
+import React, {useState} from "react";
 
 const ContactForm = () => {
+  const [contactFormData, setContactFormData] = useState({})
+  // console.log(contactFormData)
+
   return (
     <div className="w-full h-[201px] relative bg-secondary-bg-color px-[72px] mb-[621px]">
       <div className="w-full h-[1px] bg-[#495156]" />
@@ -25,30 +28,38 @@ const ContactForm = () => {
               className="w-full h-[63px] bg-[#F3F3F3] rounded-[10px] px-[20px] py-[18px] mt-[14px]"
               placeholder="نام"
               type="text"
+              value={contactFormData.name}
+              onChange={(e) => setContactFormData({...contactFormData, name: e.target.value})}
             />
           </label>
           <label className="col-span-1 w-full">
             <span className="text-[#717171]">آدرس ایمیل</span>
             <input
               className="w-full h-[63px] bg-[#F3F3F3] rounded-[10px] px-[20px] py-[18px] mt-[14px]"
-              placeholder="نام"
-              type="text"
+              placeholder="آدرس ایمیل"
+              type="email"
+              value={contactFormData.email}
+              onChange={(e) => setContactFormData({...contactFormData, email: e.target.value})}
             />
           </label>
           <label className="col-span-1 w-full">
             <span className="text-[#717171]">شماره تماس</span>
             <input
               className="w-full h-[63px] bg-[#F3F3F3] rounded-[10px] px-[20px] py-[18px] mt-[14px]"
-              placeholder="نام"
-              type="text"
+              placeholder="شماره تماس"
+              type="phone"
+              value={contactFormData.phoneNumber}
+              onChange={(e) => setContactFormData({...contactFormData, phoneNumber: e.target.value})}
             />
           </label>
           <label className="col-span-1 w-full">
             <span className="text-[#717171]">موضوع پیام</span>
             <input
               className="w-full h-[63px] bg-[#F3F3F3] rounded-[10px] px-[20px] py-[18px] mt-[14px]"
-              placeholder="نام"
+              placeholder="موضوع پیام"
               type="text"
+              value={contactFormData.messageTitle}
+              onChange={(e) => setContactFormData({...contactFormData, messageTitle: e.target.value})}
             />
           </label>
           <label className="col-span-4 w-full block mt-[23px]">
@@ -56,6 +67,8 @@ const ContactForm = () => {
             <input
               className="w-full h-[152px] bg-[#F3F3F3] rounded-[10px] px-[20px] py-[18px] mt-[14px]"
               type="text"
+              value={contactFormData.Message}
+              onChange={(e) => setContactFormData({...contactFormData, Message: e.target.value})}
             />
           </label>
         </div>

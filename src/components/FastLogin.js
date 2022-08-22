@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import SignupCoverTop from "../assets/svg/SignupCoverTop";
 import SignupCoverBottom from "../assets/svg/SignupCoverBottom";
 
 const FastLogin = () => {
+  const [userData, setUserData] = useState({});
+  // console.log(userData);
+
   return (
     <>
       <SignupCoverTop />
@@ -19,8 +22,24 @@ const FastLogin = () => {
           </p>
         </div>
         <div className="col-span-1 w-full bg-white rounded-[20px] space-y-[14px] p-[40px]">
-          <input type="text" placeholder="نام و نام خانوادگی" className="w-full bg-[#F3F3F3] rounded-[10px] px-[20px] py-[18px]" />
-          <input type="text" placeholder="شماره موبایل خود را وارد کنید..." className="w-full bg-[#F3F3F3] rounded-[10px] px-[20px] py-[18px]" />
+          <input
+            type="email"
+            placeholder="آدرس ایمیل"
+            value={userData.email}
+            onChange={(e) =>
+              setUserData({ ...userData, email: e.target.value })
+            }
+            className="w-full bg-[#F3F3F3] rounded-[10px] px-[20px] py-[18px]"
+          />
+          <input
+            type="number"
+            placeholder="رمز عبور"
+            value={userData.password}
+            onChange={(e) =>
+              setUserData({ ...userData, password: Number(e.target.value) })
+            }
+            className="w-full bg-[#F3F3F3] rounded-[10px] px-[20px] py-[18px]"
+          />
           <div className="float-left">
             <button className="text-[#767D80] rounded-[10px] ml-[30px]">
               <div className="w-[117px]">قبلا عضو شدم</div>

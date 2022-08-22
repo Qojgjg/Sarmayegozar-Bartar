@@ -20,7 +20,7 @@ const BlogCard = () => {
       </p>
       <div className="w-full h-[1px] bg-[#ECECEC] my-[15px]" />
       <Link
-        to={"/"}
+        to={"/blogs/1"}
         className="flex justify-center text-primary-btn-color text-sm font-extrabold"
       >
         ادامه مطلب
