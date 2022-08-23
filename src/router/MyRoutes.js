@@ -11,6 +11,7 @@ import LeaderBord from "../pages/LeaderBord";
 import SingleBlog from "../pages/SingleBlog";
 import Login from "../pages/Login";
 import LoginPhone from "../pages/LoginPhone";
+import Buy from "../pages/Buy";
 
 const MyRoutes = () => {
   return (
@@ -24,6 +25,7 @@ const MyRoutes = () => {
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/blogs/:id" element={<SingleBlog />} />
         <Route path="/leaderbord" element={<LeaderBord />} />
+        <Route path="/buy" element={<Buy />}/>
       </Route>
       <Route path="/login" element={<Login />} />
       <Route path="/login-phone" element={<LoginPhone />} />

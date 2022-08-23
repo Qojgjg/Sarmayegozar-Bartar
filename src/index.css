@@ -63,6 +63,7 @@
 *,
 body {
   font-family: IRANYekan;
+  list-style: none;
 } 
 
 :root {
