@@ -3,6 +3,11 @@ import HeaderShadow from "../../assets/svg/HeaderShadow";
 import HeaderTradingFrame from "../../assets/svg/HeaderTradingFrame";
 import WordBig from "../../assets/svg/WordBig";
 import WordLittle from "../../assets/svg/WordLittle";
+import AppleIconHeader from "../../assets/svg/AppleIconHeader";
+import CoinToDolarHeader from "../../assets/svg/CoinToDolarHeader";
+import BitcoinIconHeader from "../../assets/svg/BitcoinIconHeader";
+import Dowjones from "../../assets/svg/Dowjones";
+import TraceIcon from "../../assets/svg/TraceIcon";
 
 const Header = () => {
   return (
@@ -32,8 +37,23 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col justify-center">
+        <div className="flex relative flex-col justify-center pl-[72px]">
           <HeaderTradingFrame />
+          <div className="absolute top-[20px] left-[200px]">
+            <AppleIconHeader />
+          </div>
+          <div className="absolute top-[25px] right-[10px]">
+            <CoinToDolarHeader />
+          </div>
+          <div className="absolute top-[65px] left-[12px]">
+            <TraceIcon />
+          </div>
+          <div className="absolute bottom-[110px] right-[-75px]">
+            <BitcoinIconHeader />
+          </div>
+          <div className="absolute bottom-[100px] left-[72px]">
+            <Dowjones />
+          </div>
         </div>
       </div>
       <div className="relative">
