@@ -19,12 +19,14 @@ const PopularPlatforms = () => {
       <Swiper
         dir="rtl"
         navigation={true}
+        loop={true}
         slidesPerView={5}
+        spaceBetween={10}
         modules={[Navigation]}
-        className="w-full gap-[10px] bg-primary-bg-color"
+        className="w-full"
       >
         <SwiperSlide className="ml-[10px]">
-          <div className="bg-white rounded-[20px] py-[21px] shadow-[5px_5px_40px_rgba(0,0,0,0.05)]">
+          <div className="w-[251px] h-[82px] bg-white rounded-[20px] flex flex-col justify-center shadow-[5px_5px_40px_rgba(0,0,0,0.05)]">
             <img
               className="w-[77px] mx-auto"
               src={require("../../assets/img/FusionMarketsLogo.png")}
@@ -33,45 +35,41 @@ const PopularPlatforms = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide className="ml-[10px]">
-          <div className="bg-white rounded-[20px] py-[21px] shadow-[5px_5px_40px_rgba(0,0,0,0.05)]">
+          <div className="w-[251px] h-[82px] bg-white rounded-[20px] flex flex-col justify-center shadow-[5px_5px_40px_rgba(0,0,0,0.05)]">
             <img
-              className="w-[77px] mx-auto"
-              src={require("../../assets/img/FusionMarketsLogo.png")}
+              className="w-[133px] mx-auto"
+              src={require("../../assets/img/eightcapLogo.png")}
               alt="Fusion Markets Logo"
             />
           </div>
         </SwiperSlide>
         <SwiperSlide className="ml-[10px]">
-          <div className="bg-white rounded-[20px] py-[21px] shadow-[5px_5px_40px_rgba(0,0,0,0.05)]">
+          <div className="w-[251px] h-[82px] bg-white rounded-[20px] flex flex-col justify-center shadow-[5px_5px_40px_rgba(0,0,0,0.05)]">
             <img
-              className="w-[77px] mx-auto"
-              src={require("../../assets/img/FusionMarketsLogo.png")}
+              className="w-[147px] mx-auto"
+              src={require("../../assets/img/ICMarketLogo.png")}
               alt="Fusion Markets Logo"
             />
           </div>
         </SwiperSlide>
         <SwiperSlide className="ml-[10px]">
-          <div className="bg-white rounded-[20px] py-[21px] shadow-[5px_5px_40px_rgba(0,0,0,0.05)]">
+          <div className="w-[251px] h-[82px] bg-white rounded-[20px] flex flex-col justify-center shadow-[5px_5px_40px_rgba(0,0,0,0.05)]">
             <img
-              className="w-[77px] mx-auto"
-              src={require("../../assets/img/FusionMarketsLogo.png")}
+              className="w-[153px] mx-auto"
+              src={require("../../assets/img/roboForexLogo 1.png")}
               alt="Fusion Markets Logo"
             />
           </div>
         </SwiperSlide>
         <SwiperSlide className="ml-[10px]">
-          <div className="bg-white rounded-[20px] py-[21px] shadow-[5px_5px_40px_rgba(0,0,0,0.05)]">
+          <div className="w-[251px] h-[82px] bg-white rounded-[20px] flex flex-col justify-center shadow-[5px_5px_40px_rgba(0,0,0,0.05)]">
             <img
-              className="w-[77px] mx-auto"
-              src={require("../../assets/img/FusionMarketsLogo.png")}
+              className="w-[65px] mx-auto"
+              src={require("../../assets/img/Exness-Logo.png")}
               alt="Fusion Markets Logo"
             />
           </div>
         </SwiperSlide>
-        <SwiperSlide className="ml-[10px]">Slide 6</SwiperSlide>
-        <SwiperSlide className="ml-[10px]">Slide 7</SwiperSlide>
-        <SwiperSlide className="ml-[10px]">Slide 8</SwiperSlide>
-        <SwiperSlide className="ml-[10px]">Slide 9</SwiperSlide>
       </Swiper>
     </div>
   );

@@ -124,3 +124,11 @@ body {
   border-radius: 20px;
   box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.05);
 }
+
+.card-container:hover .show-shadow {
+  display: block;
+}
+
+.card-container:hover .shadow-card {
+  top: -20px;
+}

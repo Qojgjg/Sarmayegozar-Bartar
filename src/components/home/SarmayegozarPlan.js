@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import TablePlanDetails from "./TablePlanDetails";
 import ArrowDown from "../../assets/svg/ArrowDown";
+import ArrowTop from "../../assets/svg/ArrowTop";
 
 const SarmayegozarPlan = () => {
   const [isTableDetails, setIsTableDetails] = useState({
@@ -115,7 +116,7 @@ const SarmayegozarPlan = () => {
                     })
                   }
                 >
-                  <ArrowDown />
+                  {isTableDetails.isInvestmentPeriod ? <ArrowTop /> : <ArrowDown />}
                 </div>
               </td>
               <td className="w-[330px] h-[101.5px] text-lg font-medium border-l">
@@ -147,7 +148,7 @@ const SarmayegozarPlan = () => {
                     })
                   }
                 >
-                  <ArrowDown />
+                  {isTableDetails.isMinTraidingDays ? <ArrowTop /> : <ArrowDown />}
                 </div>
               </td>
               <td className="w-[330px] h-[101.5px] text-lg font-medium border-l">
@@ -179,7 +180,7 @@ const SarmayegozarPlan = () => {
                     })
                   }
                 >
-                  <ArrowDown />
+                  {isTableDetails.isMaxDailyLoss ? <ArrowTop /> : <ArrowDown />}
                 </div>
               </td>
               <td className="w-[330px] h-[101.5px] text-lg font-medium border-l">
@@ -211,7 +212,7 @@ const SarmayegozarPlan = () => {
                     })
                   }
                 >
-                  <ArrowDown />
+                  {isTableDetails.isMaxLoss ? <ArrowTop /> : <ArrowDown />}
                 </div>
               </td>
               <td className="w-[330px] h-[101.5px] text-lg font-medium border-l">
@@ -243,7 +244,7 @@ const SarmayegozarPlan = () => {
                     })
                   }
                 >
-                  <ArrowDown />
+                  {isTableDetails.isBenefitTarget ? <ArrowTop /> : <ArrowDown />}
                 </div>
               </td>
               <td className="w-[330px] h-[101.5px] text-lg font-medium border-l">
@@ -275,7 +276,7 @@ const SarmayegozarPlan = () => {
                     })
                   }
                 >
-                  <ArrowDown />
+                  {isTableDetails.isRefundableFee ? <ArrowTop /> : <ArrowDown />}
                 </div>
               </td>
               <td className="w-[330px] h-[101.5px] text-lg font-medium border-l">
