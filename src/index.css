@@ -78,7 +78,7 @@ body {
   border-radius: 1px;
 }
 
-.linkContainer:focus .icons {
+.link-under-line {
   padding: 12px 0;
   border-bottom: 2px solid #ffff;
   border-radius: 1px;

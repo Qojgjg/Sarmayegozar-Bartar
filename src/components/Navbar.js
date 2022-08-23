@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import SiteLogo from "../assets/svg/SiteLogo";
 import Home from "../assets/svg/Home";
 import Box from "../assets/svg/Box";
@@ -12,6 +12,9 @@ import User from "../assets/svg/User";
 
 const Navbar = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+
+  console.log(location);
 
   return (
     <nav className="w-full bg-secondary-bg-color text-white px-[72px] py-[40px]">
@@ -28,7 +31,11 @@ const Navbar = () => {
               to={"/"}
               className="flex items-center gap-[7px] linkContainer"
             >
-              <div className="icons transition-all">
+              <div
+                className={`icons transition-all ${
+                  location.pathname === "/" ? "link-under-line" : ""
+                }`}
+              >
                 <Home />
               </div>
               <div>صفحه اصلی</div>
@@ -39,7 +46,11 @@ const Navbar = () => {
               to={"/plans"}
               className="flex items-center gap-[7px] linkContainer"
             >
-              <div className="icons transition-all">
+              <div
+                className={`icons transition-all ${
+                  location.pathname === "/plans" ? "link-under-line" : ""
+                }`}
+              >
                 <Box />
               </div>
               <div>پلن ها</div>
@@ -50,7 +61,11 @@ const Navbar = () => {
               to={"/rules"}
               className="flex items-center gap-[7px] linkContainer"
             >
-              <div className="icons transition-all">
+              <div
+                className={`icons transition-all ${
+                  location.pathname === "/rules" ? "link-under-line" : ""
+                }`}
+              >
                 <Scales />
               </div>
               <div>قوانین</div>
@@ -61,7 +76,11 @@ const Navbar = () => {
               to={"/aboutus"}
               className="flex items-center gap-[7px] linkContainer"
             >
-              <div className="icons transition-all">
+              <div
+                className={`icons transition-all ${
+                  location.pathname === "/aboutus" ? "link-under-line" : ""
+                }`}
+              >
                 <Information />
               </div>
               <div>درباره ما</div>
@@ -72,7 +91,11 @@ const Navbar = () => {
               to={"/contactus"}
               className="flex items-center gap-[7px] linkContainer"
             >
-              <div className="icons transition-all">
+              <div
+                className={`icons transition-all ${
+                  location.pathname === "/contactus" ? "link-under-line" : ""
+                }`}
+              >
                 <Call />
               </div>
               <div>تماس با ما</div>
@@ -83,7 +106,11 @@ const Navbar = () => {
               to={"/blogs"}
               className="flex items-center gap-[7px] linkContainer"
             >
-              <div className="icons transition-all">
+              <div
+                className={`icons transition-all ${
+                  location.pathname === "/blogs" ? "link-under-line" : ""
+                }`}
+              >
                 <Book />
               </div>
               <div>بلاگ</div>
@@ -94,7 +121,11 @@ const Navbar = () => {
               to={"/leaderbord"}
               className="flex items-center gap-[7px] linkContainer"
             >
-              <div className="icons transition-all">
+              <div
+                className={`icons transition-all ${
+                  location.pathname === "/leaderbord" ? "link-under-line" : ""
+                }`}
+              >
                 <People />
               </div>
               <div>لیدر بورد</div>
