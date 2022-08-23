@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+import useTitle from "../hooks/useTitle";
 import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
 import Google from "../assets/svg/Google";
 
 const Login = () => {
+  useTitle("ورود")
   const [userData, setUserData] = useState({});
   // console.log(userData)
 
