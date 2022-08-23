@@ -116,7 +116,11 @@ const SarmayegozarPlan = () => {
                     })
                   }
                 >
-                  {isTableDetails.isInvestmentPeriod ? <ArrowTop /> : <ArrowDown />}
+                  {isTableDetails.isInvestmentPeriod ? (
+                    <ArrowTop />
+                  ) : (
+                    <ArrowDown />
+                  )}
                 </div>
               </td>
               <td className="w-[330px] h-[101.5px] text-lg font-medium border-l">
@@ -148,7 +152,11 @@ const SarmayegozarPlan = () => {
                     })
                   }
                 >
-                  {isTableDetails.isMinTraidingDays ? <ArrowTop /> : <ArrowDown />}
+                  {isTableDetails.isMinTraidingDays ? (
+                    <ArrowTop />
+                  ) : (
+                    <ArrowDown />
+                  )}
                 </div>
               </td>
               <td className="w-[330px] h-[101.5px] text-lg font-medium border-l">
@@ -244,7 +252,11 @@ const SarmayegozarPlan = () => {
                     })
                   }
                 >
-                  {isTableDetails.isBenefitTarget ? <ArrowTop /> : <ArrowDown />}
+                  {isTableDetails.isBenefitTarget ? (
+                    <ArrowTop />
+                  ) : (
+                    <ArrowDown />
+                  )}
                 </div>
               </td>
               <td className="w-[330px] h-[101.5px] text-lg font-medium border-l">
@@ -264,8 +276,8 @@ const SarmayegozarPlan = () => {
                 </td>
               </tr>
             ) : null}
-            <tr className="odd:bg-[#F5F5F5] even:bg-white">
-              <td className="w-[330px] h-[101.5px] flex justify-between items-center px-[40px] border-l">
+            <tr className="">
+              <td className="w-[330px] h-[101.5px] flex justify-between items-center px-[40px] border-l bg-white">
                 <p className="text-lg font-extrabold">هزینه قابل استرداد</p>
                 <div
                   className="cursor-pointer"
@@ -276,16 +288,20 @@ const SarmayegozarPlan = () => {
                     })
                   }
                 >
-                  {isTableDetails.isRefundableFee ? <ArrowTop /> : <ArrowDown />}
+                  {isTableDetails.isRefundableFee ? (
+                    <ArrowTop />
+                  ) : (
+                    <ArrowDown />
+                  )}
                 </div>
               </td>
-              <td className="w-[330px] h-[101.5px] text-lg font-medium border-l">
+              <td className="w-[330px] h-[101.5px] text-lg font-medium border-l bg-white">
                 30 روزه
               </td>
-              <td className="w-[330px] h-[101.5px] text-lg font-medium border-l-[0.5px]">
+              <td className="w-[330px] h-[101.5px] text-lg font-medium border-l-[0.5px] bg-white">
                 30 روزه
               </td>
-              <td className="w-[330px] h-[101.5px] text-lg font-medium">
+              <td className="w-[330px] h-[101.5px] text-lg font-medium bg-white">
                 30 روزه
               </td>
             </tr>

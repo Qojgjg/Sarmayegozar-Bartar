@@ -39,19 +39,19 @@ const Header = () => {
         </div>
         <div className="flex relative flex-col justify-center pl-[72px]">
           <HeaderTradingFrame />
-          <div className="absolute top-[20px] left-[200px]">
+          <div className="absolute top-[20px] left-[200px] my-animate-one">
             <AppleIconHeader />
           </div>
-          <div className="absolute top-[25px] right-[10px]">
+          <div className="absolute top-[25px] right-[10px] my-animate-three">
             <CoinToDolarHeader />
           </div>
-          <div className="absolute top-[65px] left-[12px]">
+          <div className="absolute top-[65px] left-[12px] my-animate-two">
             <TraceIcon />
           </div>
-          <div className="absolute bottom-[110px] right-[-75px]">
+          <div className="absolute bottom-[110px] right-[-75px] my-animate-two">
             <BitcoinIconHeader />
           </div>
-          <div className="absolute bottom-[100px] left-[72px]">
+          <div className="absolute bottom-[100px] left-[72px] my-animate-three">
             <Dowjones />
           </div>
         </div>

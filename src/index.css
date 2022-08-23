@@ -132,3 +132,49 @@ body {
 .card-container:hover .shadow-card {
   top: -20px;
 }
+
+table tr:last-child td:first-child {
+  border-bottom-right-radius: 20px;
+}
+table tr:last-child td:last-child {
+  border-bottom-left-radius: 20px;
+}
+table tr:first-child th:last-child {
+  border-top-left-radius: 20px;
+}
+
+@keyframes bounceone {
+  0%, 100% {
+    transform: translateY(-25%);
+  }
+  50% {
+    transform: none;
+  }
+}
+.my-animate-one {
+  animation: bounceone 3s linear infinite;
+}
+
+@keyframes bounceTwo {
+  0%, 100% {
+    transform: translateY(-10%);
+  }
+  50% {
+    transform: none;
+  }
+}
+.my-animate-two {
+  animation: bounceTwo 3s linear infinite;
+}
+
+@keyframes bounceThree {
+  0%, 100% {
+    transform: translateY(-5%);
+  }
+  50% {
+    transform: none;
+  }
+}
+.my-animate-three {
+  animation: bounceThree 3s linear infinite;
+}
