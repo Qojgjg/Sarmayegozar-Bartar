@@ -22,20 +22,27 @@ const Checkout = () => {
 
   const [showNext2, setShowNext2] = useState(false)
   const [checkoutList, setCheckoutList] = useState({
+    required:
+    {
     email: "",
-    country:"",
-    state: "",
+    country: "",
     city: "",
     address1: "",
-    address2: "",
-    postcode: "",
-    phone: "",
     mobile: "",
     password: "",
     description: "",
-    marketer:""
+  },
+    optional:
+    {
+      state: "",
+      address2: "",
+      postcode: "",
+      phone: "",
+      marketer: ""
+    }
   })
 
+  console.log(checkoutList)
   useEffect(() => {
     if(ruleCheckFirst && ruleCheckSecond)
     setRuleError("")
@@ -44,8 +51,9 @@ const Checkout = () => {
   }, [ruleCheckFirst, ruleCheckSecond, thisCurrency])
 
   const next = () => {
-    const valid = Object.values(checkoutList).every(item => item)
-    if(!valid) return setNextError("لطفا پیش از ادامه ورودی های خود را کنترل کنید!")
+    const valid = Object.values(checkoutList.required).every(item => item)
+    if (!valid) return setNextError("لطفا پیش از ادامه ورودی های خود را کنترل کنید!")
+    if(!thisCurrency && checkoutMode === "firstMode") return setNextError("لطفا پیش از ادامه ورودی های خود را کنترل کنید!")
     setNextError("")
     setShowNext(true)
   }

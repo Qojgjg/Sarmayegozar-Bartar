@@ -16,8 +16,8 @@ const CheckoutFirst = (props) => {
               className="w-full h-[63px] bg-[#F3F3F3] rounded-[10px] px-[20px] py-[18px] mt-[14px] outline-none"
               placeholder="آدرس ایمیل خود را وارد کنید"
               type="text"
-              value={props.checkoutList.email}
-              onChange={(e) => props.setCheckoutList({...props.checkoutList, email :e.target.value})}
+              value={props.checkoutList.required.email}
+              onChange={(e) => props.setCheckoutList({...props.checkoutList, required: {...props.checkoutList.required, email: e.target.value}})}
             />
             </label>
           </div>
@@ -29,8 +29,8 @@ const CheckoutFirst = (props) => {
                   className="w-full h-[63px] bg-[#F3F3F3] rounded-[10px] px-[20px] py-[18px] mt-[14px] outline-none"
                   placeholder="کشور محل زندگی خود را وارد کنید"
                   type="text"
-                  value={props.checkoutList.country}
-                  onChange={(e) => props.setCheckoutList({...props.checkoutList, country:e.target.value})}
+                  value={props.checkoutList.required.country}
+                  onChange={(e) => props.setCheckoutList({...props.checkoutList, required: {...props.checkoutList.required, country: e.target.value}})}
                   />
                 </label>
             </div>
@@ -41,8 +41,8 @@ const CheckoutFirst = (props) => {
                   className="w-full h-[63px] bg-[#F3F3F3] rounded-[10px] px-[20px] py-[18px] mt-[14px] outline-none"
                   placeholder="استان محل زندگی خود را وارد کنید"
                   type="text"
-                  value={props.checkoutList.state}
-                  onChange={(e) => props.setCheckoutList({...props.checkoutList, state:e.target.value})}
+                  value={props.checkoutList.optional.state}
+                  onChange={(e) => props.setCheckoutList({...props.checkoutList, optional: {...props.checkoutList.optional, state: e.target.value}})}
                 />
                 </label>
             </div>
@@ -55,8 +55,8 @@ const CheckoutFirst = (props) => {
                   className="w-full h-[63px] bg-[#F3F3F3] rounded-[10px] px-[20px] py-[18px] mt-[14px] outline-none"
                   placeholder="شهر محل زندگی خود را وارد کنید"
                   type="text"
-                  value={props.checkoutList.city}
-                  onChange={(e) => props.setCheckoutList({...props.checkoutList, city:e.target.value})}
+                  value={props.checkoutList.required.city}
+                  onChange={(e) => props.setCheckoutList({...props.checkoutList, required: {...props.checkoutList.required, city: e.target.value}})}
                 />
                 </label>
             </div>
@@ -67,8 +67,8 @@ const CheckoutFirst = (props) => {
                   className="w-full h-[63px] bg-[#F3F3F3] rounded-[10px] px-[20px] py-[18px] mt-[14px] outline-none"
                   placeholder=" نام خیابان و پلاک خانه خود را وارد کنید"
                   type="text"
-                  value={props.checkoutList.address1}
-                  onChange={(e) => props.setCheckoutList({...props.checkoutList, address1:e.target.value})}
+                  value={props.checkoutList.required.address1}
+                  onChange={(e) => props.setCheckoutList({...props.checkoutList, required: {...props.checkoutList.required, address1: e.target.value}})}
                   />
                 </label>
             </div>
@@ -81,8 +81,8 @@ const CheckoutFirst = (props) => {
                   className="w-full h-[63px] bg-[#F3F3F3] rounded-[10px] px-[20px] py-[18px] mt-[14px] outline-none"
                   placeholder="واحد محل زندگی خود را وارد کنید"
                   type="text"
-                  value={props.checkoutList.address2}
-                  onChange={(e) => props.setCheckoutList({...props.checkoutList, address2:e.target.value})}
+                  value={props.checkoutList.optional.address2}
+                  onChange={(e) => props.setCheckoutList({...props.checkoutList, optional: {...props.checkoutList.optional, address2: e.target.value}})}
                 />
                 </label>
             </div>
@@ -92,9 +92,9 @@ const CheckoutFirst = (props) => {
                 <input
                   className="w-full h-[63px] bg-[#F3F3F3] rounded-[10px] px-[20px] py-[18px] mt-[14px] outline-none"
                   placeholder="کد پستی خانه خود را وارد کنید"
-                  type="text"
-                  value={props.checkoutList.postcode}
-                  onChange={(e) => props.setCheckoutList({...props.checkoutList, postcode:e.target.value})}
+                  type="number"
+                  value={props.checkoutList.optional.postcode}
+                  onChange={(e) => props.setCheckoutList({...props.checkoutList, optional: {...props.checkoutList.optional, postcode: e.target.value}})}
                   />
                 </label>
             </div>
@@ -106,9 +106,9 @@ const CheckoutFirst = (props) => {
                 <input
                   className="w-full h-[63px] bg-[#F3F3F3] rounded-[10px] px-[20px] py-[18px] mt-[14px] outline-none"
                   placeholder="شماره تماس خود را وارد کنید"
-                  type="text"
-                  value={props.checkoutList.phone}
-                  onChange={(e) => props.setCheckoutList({...props.checkoutList, phone:e.target.value})}
+                  type="number"
+                  value={props.checkoutList.optional.phone}
+                  onChange={(e) => props.setCheckoutList({ ...props.checkoutList, optional: { ...props.checkoutList.optional, phone: e.target.value } })}     
                 />
                 </label>
             </div>
@@ -118,9 +118,9 @@ const CheckoutFirst = (props) => {
                 <input
                   className="w-full h-[63px] bg-[#F3F3F3] rounded-[10px] px-[20px] py-[18px] mt-[14px] outline-none"
                   placeholder="شماره تماس خود را وارد کنید"
-                  type="text"
-                  value={props.checkoutList.mobile}
-                  onChange={(e) => props.setCheckoutList({...props.checkoutList, mobile:e.target.value})}
+                  type="number"
+                  value={props.checkoutList.required.mobile}
+                  onChange={(e) => props.setCheckoutList({...props.checkoutList, required: {...props.checkoutList.required, mobile: e.target.value}})}
                   />
                 </label>
             </div>
@@ -132,8 +132,8 @@ const CheckoutFirst = (props) => {
               className="w-full h-[63px] bg-[#F3F3F3] rounded-[10px] px-[20px] py-[18px] mt-[14px] outline-none"
               placeholder="گدرواژه خود را وارد کنید"
               type="password"
-              value={props.checkoutList.password}
-              onChange={(e) => props.setCheckoutList({...props.checkoutList, password:e.target.value})}
+              value={props.checkoutList.required.password}
+              onChange={(e) => props.setCheckoutList({...props.checkoutList, required: {...props.checkoutList.required, password: e.target.value}})}  
             />
             </label>
           </div>
@@ -145,8 +145,8 @@ const CheckoutFirst = (props) => {
               placeholder="توضیحات تکمیلی را وارد کنید"
               type="text"
               rows="6"
-              value={props.checkoutList.description}
-              onChange={(e) => props.setCheckoutList({...props.checkoutList, description:e.target.value})}
+              value={props.checkoutList.required.description}
+              onChange={(e) => props.setCheckoutList({...props.checkoutList, required: {...props.checkoutList.required, description: e.target.value}})}
             />
             </label>
           </div>
@@ -157,8 +157,8 @@ const CheckoutFirst = (props) => {
               className="w-full h-[63px] bg-[#F3F3F3] rounded-[10px] px-[20px] py-[18px] mt-[14px] outline-none"
               placeholder="نام کاربری بازاریاب را وارد کنید"
               type="text"
-              value={props.checkoutList.marketer}
-              onChange={(e) => props.setCheckoutList({...props.checkoutList, marketer:e.target.value})}
+              value={props.checkoutList.optional.marketer}
+              onChange={(e) => props.setCheckoutList({ ...props.checkoutList, optional: { ...props.checkoutList.optional, marketer: e.target.value } })}
             />
             </label>
           </div>
