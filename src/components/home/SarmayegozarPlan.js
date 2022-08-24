@@ -20,7 +20,7 @@ const SarmayegozarPlan = () => {
       <div className="text-center text-white mb-[36px]">
         <h2 className="text-5xl leading-[70px] mb-[14px]">
           <p className="font-extrabold">پلن های</p>
-          <p className="font-light"> سرمایه گذار</p>
+          <p className="font-light">سرمایه گذار برتر</p>
         </h2>
         <p className="w-[636px] mx-auto text-[19px] font-medium leading-[40px]">
           سرمایه گذار برتر در راستای تامین سرمایه معامله گران برای ترید در

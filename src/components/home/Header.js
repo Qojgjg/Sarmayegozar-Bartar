@@ -22,19 +22,20 @@ const Header = () => {
                 <p className="font-light">در بازارهای مالی</p>
               </h2>
             </div>
-            <p className="w-[636px] text-lg mt-[14px]">
+            <p className="w-[636px] text-lg leading-[40px] mt-[14px]">
               سرمایه گذار برتر در راستای تامین سرمایه معامله گران برای ترید در
               بازارهای مالی با حداقل ریسک ممکن تشکیل شده و در این راه خدماتی را
               به تریدرها ارائه میکند.
             </p>
-            <div className="flex items-center mt-[30px] gap-[24px]">
-              <button className="bg-primary-btn-color hover:bg-secondary-btn-color transition-all rounded-[10px] px-[60px] py-[11px]">
+            <div className="flex items-center mt-[30px] mb-[53px] gap-[24px]">
+              <button className="w-[237px] h-[62px] bg-primary-btn-color hover:bg-secondary-btn-color transition-all rounded-[10px] py-[11px]">
                 مشاهده پلن ها
               </button>
-              <button className="border border-white rounded-[10px] hover:bg-primary-bg-color hover:text-secondary-bg-color transition-all px-[60px] py-[11px]">
+              <button className="w-[250px] h-[62px] border border-white rounded-[10px] hover:bg-primary-bg-color hover:text-secondary-bg-color transition-all py-[11px]">
                 درباره سرمایه گذار برتر
               </button>
             </div>
+            <p className="text-[27px] font-light"><span className="font-extrabold">+ ۲۰۰۰ نفر هم اکنون</span> در حال معامله هستند...</p>
           </div>
         </div>
         <div className="flex relative flex-col justify-center pl-[72px]">

@@ -32,34 +32,6 @@
   }
 }
 
-/* @font-face {
-  font-family: IRANYekan;
-  src: url("./assets/font/IRANYekanWebMedium.eot") format("eot"),
-    url("./assets/font/IRANYekanWebBlack.eot") format("eot"),
-    url("./assets/font/IRANYekanWebBold.eot") format("eot"),
-    url("./assets/font/IRANYekanWebExtraBlack.eot") format("eot"),
-    url("./assets/font/IRANYekanWebExtraBold.eot") format("eot"),
-    url("./assets/font/IRANYekanWebLight.eot") format("eot"),
-    url("./assets/font/IRANYekanWebRegular.eot") format("eot"),
-    url("./assets/font/IRANYekanWebThin.eot") format("eot"),
-    url("./assets/font/IRANYekanWebMedium.woff") format("woff"),
-    url("./assets/font/IRANYekanWebBlack.woff") format("woff"),
-    url("./assets/font/IRANYekanWebBold.woff") format("woff"),
-    url("./assets/font/IRANYekanWebExtraBlack.woff") format("woff"),
-    url("./assets/font/IRANYekanWebExtraBold.woff") format("woff"),
-    url("./assets/font/IRANYekanWebLight.woff") format("woff"),
-    url("./assets/font/IRANYekanWebRegular.woff") format("woff"),
-    url("./assets/font/IRANYekanWebThin.woff") format("woff"),
-    url("./assets/font/IRANYekanWebMedium.woff2") format("woff2"),
-    url("./assets/font/IRANYekanWebBlack.woff2") format("woff2"),
-    url("./assets/font/IRANYekanWebBold.woff2") format("woff2"),
-    url("./assets/font/IRANYekanWebExtraBlack.woff2") format("woff2"),
-    url("./assets/font/IRANYekanWebExtraBold.woff2") format("woff2"),
-    url("./assets/font/IRANYekanWebLight.woff2") format("woff2"),
-    url("./assets/font/IRANYekanWebRegular.woff2") format("woff2"),
-    url("./assets/font/IRANYekanWebThin.woff2") format("woff2"),
-}
-*/
 *,
 body {
   font-family: IRANYekan;
@@ -126,14 +98,6 @@ body {
   box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.05);
 }
 
-.card-container:hover .show-shadow {
-  display: block;
-}
-
-.card-container:hover .shadow-card {
-  top: -20px;
-}
-
 table tr:last-child td:first-child {
   border-bottom-right-radius: 20px;
 }
@@ -178,4 +142,19 @@ table tr:first-child th:last-child {
 }
 .my-animate-three {
   animation: bounceThree 3s linear infinite;
+}
+
+.card-anime:hover {
+  animation: myCardAnime 0.3s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+}
+
+@keyframes myCardAnime {
+  0% {
+    bottom: 0;
+  }
+  100% {
+    bottom: 20px;
+  }
 }
