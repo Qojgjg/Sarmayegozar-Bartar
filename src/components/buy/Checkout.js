@@ -2,6 +2,7 @@ import { useState, useEffect } from "react"
 import CheckoutFirst from "./CheckoutFirst"
 import CheckoutSecond from "./CheckoutSecond"
 
+
 const Checkout = () => {
   const [showNext, setShowNext] = useState(false)
   const [platform, setPlatform] = useState("metatrader5")
@@ -23,16 +24,16 @@ const Checkout = () => {
   const [checkoutList, setCheckoutList] = useState({
     email: "",
     country:"",
-    state: "",
+    state: "none",
     city: "",
     address1: "",
-    address2: "",
-    postcode: "",
-    phone: "",
+    address2: "none",
+    postcode: "none",
+    phone: "none",
     mobile: "",
     password: "",
     description: "",
-    marketer:""
+    marketer:"none"
   })
 
   useEffect(() => {

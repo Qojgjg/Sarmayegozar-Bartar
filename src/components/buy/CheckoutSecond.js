@@ -37,7 +37,7 @@ const CheckoutSecond = (props) =>{
             </div>
             <div className="w-1/2">
               <label>
-                <span className="text-[#515151] text-[14px] font-bold leading-[24.18px]">استان</span>
+                <span className="text-[#515151] text-[14px] font-bold leading-[24.18px]">استان<span className="text-[#C2C2C2]"> (اختیاری)</span></span>
                 <input
                   className="w-full h-[63px] bg-[#F3F3F3] rounded-[10px] px-[20px] py-[18px] mt-[14px] outline-none"
                   placeholder="استان محل زندگی خود را وارد کنید"
@@ -77,7 +77,7 @@ const CheckoutSecond = (props) =>{
           <div className="flex gap-[24px]">
           <div className="w-1/2">
               <label>
-                <span className="text-[#515151] text-[14px] font-bold leading-[24.18px]">آپارتمان، مجتمع، واحد و...</span>
+                <span className="text-[#515151] text-[14px] font-bold leading-[24.18px]">آپارتمان، مجتمع، واحد و...<span className="text-[#C2C2C2]"> (اختیاری)</span></span>
                 <input
                   className="w-full h-[63px] bg-[#F3F3F3] rounded-[10px] px-[20px] py-[18px] mt-[14px] outline-none"
                   placeholder="واحد محل زندگی خود را وارد کنید"
@@ -89,7 +89,7 @@ const CheckoutSecond = (props) =>{
             </div>
             <div className="w-1/2">
               <label>
-                <span className="text-[#515151] text-[14px] font-bold leading-[24.18px]">کد پستی</span>
+                <span className="text-[#515151] text-[14px] font-bold leading-[24.18px]">کد پستی<span className="text-[#C2C2C2]"> (اختیاری)</span></span>
                 <input
                   className="w-full h-[63px] bg-[#F3F3F3] rounded-[10px] px-[20px] py-[18px] mt-[14px] outline-none"
                   placeholder="کد پستی خانه خود را وارد کنید"
@@ -103,7 +103,7 @@ const CheckoutSecond = (props) =>{
           <div className="flex gap-[24px]">
           <div className="w-1/2">
               <label>
-                <span className="text-[#515151] text-[14px] font-bold leading-[24.18px]">شماره تماس ثابت</span>
+                <span className="text-[#515151] text-[14px] font-bold leading-[24.18px]">شماره تماس ثابت<span className="text-[#C2C2C2]"> (اختیاری)</span></span>
                 <input
                   className="w-full h-[63px] bg-[#F3F3F3] rounded-[10px] px-[20px] py-[18px] mt-[14px] outline-none"
                   placeholder="شماره تماس خود را وارد کنید"
@@ -153,7 +153,7 @@ const CheckoutSecond = (props) =>{
           </div>
           <div>
           <label>
-            <span className="text-[#515151] text-[14px] font-bold leading-[24.18px]">نام کاربری بازاریاب</span>
+            <span className="text-[#515151] text-[14px] font-bold leading-[24.18px]">نام کاربری بازاریاب<span className="text-[#C2C2C2]"> (اختیاری)</span></span>
             <input
               className="w-full h-[63px] bg-[#F3F3F3] rounded-[10px] px-[20px] py-[18px] mt-[14px] outline-none"
               placeholder="نام کاربری بازاریاب را وارد کنید"
