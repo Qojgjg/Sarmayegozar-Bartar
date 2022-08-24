@@ -6,13 +6,6 @@ const CheckoutSidebar = (props) => {
 
   const [showList, setShowList] = useState(false)
 
-  const next = () => {
-    if(!(props.ruleCheckFirst && props.ruleCheckSecond)) return props.setRuleError("لطفا پیش از ادامه قوانین را بپذیرید!")
-    if(!props.thisCurrency && props.checkoutMode === "firstMode") return props.setNextError("لطفا پیش از ادامه ورودی های خود را کنترل کنید!")
-    props.setShowNext(true)
-    props.setNextError("")
-  }
-
   return (
     <div className="flex flex-col w-[416px] gap-[24px]">
       <div className="h-max px-[40px] py-[42px] bg-white rounded-[20px] shadow-[5px_5px_40px_rgba(0,0,0,0.05)]">
@@ -127,16 +120,15 @@ const CheckoutSidebar = (props) => {
           <div
             className="bg-primary-btn-color hover:bg-secondary-btn-color text-white w-full h-[63px] flex flex-col items-center rounded-[10px] cursor-pointer"
             onClick={() => {
-              if(!props.showNext) return next()
+              if(!props.showNext) return props.next()
               props.submit()
-              
             }}
             >
               {
                 props.showNext ?
-                <p className="w-max mx-auto my-auto font-bold text-[16px] leading-[40px] ">مرحله بعد (‌انتخاب پلتفرم)</p>
-                :
                 <p className="w-max mx-auto my-auto font-bold text-[16px] leading-[40px] ">ادامه فرایند خرید</p>
+                :
+                <p className="w-max mx-auto my-auto font-bold text-[16px] leading-[40px] ">مرحله بعد (‌انتخاب پلتفرم)</p>
               }
             </div>
             <div

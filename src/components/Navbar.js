@@ -14,7 +14,7 @@ const Navbar = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  console.log(location);
+  // console.log(location);
 
   return (
     <nav className="w-full bg-secondary-bg-color text-white px-[72px] py-[40px]">

@@ -24,16 +24,16 @@ const Checkout = () => {
   const [checkoutList, setCheckoutList] = useState({
     email: "",
     country:"",
-    state: "none",
+    state: "",
     city: "",
     address1: "",
-    address2: "none",
-    postcode: "none",
-    phone: "none",
+    address2: "",
+    postcode: "",
+    phone: "",
     mobile: "",
     password: "",
     description: "",
-    marketer:"none"
+    marketer:""
   })
 
   useEffect(() => {
@@ -43,42 +43,20 @@ const Checkout = () => {
     return setNextError("")
   }, [ruleCheckFirst, ruleCheckSecond, thisCurrency])
 
+  const next = () => {
+    const valid = Object.values(checkoutList).every(item => item)
+    if(!valid) return setNextError("لطفا پیش از ادامه ورودی های خود را کنترل کنید!")
+    setNextError("")
+    setShowNext(true)
+  }
+
   const submit = () => {
-    Object.values(checkoutList).forEach(item => {
-      if(!item) return setNextError("لطفا پیش از ادامه ورودی های خود را کنترل کنید!")
-      setNextError("")
-    });
-    
+    if(!(ruleCheckFirst && ruleCheckSecond)) return setRuleError("لطفا پیش از ادامه قوانین را بپذیرید!")
+    if(!thisCurrency && checkoutMode === "firstMode") return setNextError("لطفا پیش از ادامه ورودی های خود را کنترل کنید!")
+    setNextError("")
   }
 
   if(showNext) return <CheckoutSecond 
-    setShowNext={setShowNext}
-    showNext={showNext}
-    setRuleError={setRuleError}
-    quantity={quantity}
-    price={price}
-    totalPrice={totalPrice}
-    currencies={currencies}
-    setCurrencies={setCurrencies}
-    thisCurrency={thisCurrency}
-    setThisCurrency={setThisCurrency}
-    checkoutMode={checkoutMode}
-    setCheckoutMode={setCheckoutMode}
-    offCode={offCode}
-    setOffCode={setOffCode}
-    ruleCheckFirst={ruleCheckFirst}
-    ruleCheckSecond={ruleCheckSecond}
-    nextError={nextError}
-    setNextError={setNextError}
-    
-    showNext2={showNext2}
-    setShowNext2={setShowNext2}
-    checkoutList={checkoutList}
-    setCheckoutList={setCheckoutList}
-    submit={submit}
-  />
-
-  return <CheckoutFirst 
   showNext={showNext}
   setShowNext={setShowNext}
   platform={platform}
@@ -109,8 +87,35 @@ const Checkout = () => {
 
   showNext2={showNext2}
   setShowNext2={setShowNext2}
-  submit={submit}
+    submit={submit}
   />
+
+  return <CheckoutFirst 
+  setShowNext={setShowNext}
+  showNext={showNext}
+  setRuleError={setRuleError}
+  quantity={quantity}
+  price={price}
+  totalPrice={totalPrice}
+  currencies={currencies}
+  setCurrencies={setCurrencies}
+  thisCurrency={thisCurrency}
+  setThisCurrency={setThisCurrency}
+  checkoutMode={checkoutMode}
+  setCheckoutMode={setCheckoutMode}
+  offCode={offCode}
+  setOffCode={setOffCode}
+  ruleCheckFirst={ruleCheckFirst}
+  ruleCheckSecond={ruleCheckSecond}
+  nextError={nextError}
+  setNextError={setNextError}
+  
+  showNext2={showNext2}
+  setShowNext2={setShowNext2}
+  checkoutList={checkoutList}
+    setCheckoutList={setCheckoutList}
+    next={next}
+/>
 }
 
 export default Checkout

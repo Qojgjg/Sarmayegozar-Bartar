@@ -13,7 +13,7 @@ const SarmayegozarPlan = () => {
     isRefundableFee: false,
   });
 
-  console.log(isTableDetails);
+  // console.log(isTableDetails);
 
   return (
     <main className="w-full bg-secondary-bg-color px-[72px] py-[66px]">
