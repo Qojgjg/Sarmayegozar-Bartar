@@ -3,11 +3,6 @@ import HeaderShadow from "../../assets/svg/HeaderShadow";
 import HeaderTradingFrame from "../../assets/svg/HeaderTradingFrame";
 import WordBig from "../../assets/svg/WordBig";
 import WordLittle from "../../assets/svg/WordLittle";
-import AppleIconHeader from "../../assets/svg/AppleIconHeader";
-import CoinToDolarHeader from "../../assets/svg/CoinToDolarHeader";
-import BitcoinIconHeader from "../../assets/svg/BitcoinIconHeader";
-import Dowjones from "../../assets/svg/Dowjones";
-import TraceIcon from "../../assets/svg/TraceIcon";
 
 const Header = () => {
   return (
@@ -35,25 +30,43 @@ const Header = () => {
                 درباره سرمایه گذار برتر
               </button>
             </div>
-            <p className="text-[27px] font-light"><span className="font-extrabold">+ ۲۰۰۰ نفر هم اکنون</span> در حال معامله هستند...</p>
+            <p className="text-[27px] font-light">
+              <span className="font-extrabold">+ ۲۰۰۰ نفر هم اکنون</span> در حال
+              معامله هستند...
+            </p>
           </div>
         </div>
         <div className="flex relative flex-col justify-center pl-[72px]">
           <HeaderTradingFrame />
           <div className="absolute top-[20px] left-[200px] my-animate-one">
-            <AppleIconHeader />
+            <img
+              src={require("../../assets/img/aplle-icon-header.png")}
+              alt="aplle-icon-header"
+            />
           </div>
           <div className="absolute top-[25px] right-[10px] my-animate-three">
-            <CoinToDolarHeader />
+            <img
+              src={require("../../assets/img/dolllorToCoin-icon-header.png")}
+              alt="aplle-icon-header"
+            />
           </div>
           <div className="absolute top-[65px] left-[12px] my-animate-two">
-            <TraceIcon />
+            <img
+              src={require("../../assets/img/Trace-icon-header.png")}
+              alt="aplle-icon-header"
+            />
           </div>
           <div className="absolute bottom-[110px] right-[-75px] my-animate-two">
-            <BitcoinIconHeader />
+            <img
+              src={require("../../assets/img/BTC-icon-header.png")}
+              alt="aplle-icon-header"
+            />
           </div>
           <div className="absolute bottom-[100px] left-[72px] my-animate-three">
-            <Dowjones />
+            <img
+              src={require("../../assets/img/dowjnes-icon-header.png")}
+              alt="aplle-icon-header"
+            />
           </div>
         </div>
       </div>

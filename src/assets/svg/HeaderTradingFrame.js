@@ -6,7 +6,7 @@ export default () => (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g clip-path="url(#clip0_525_5684)">
+    <g clipPath="url(#clip0_525_5684)">
       <rect
         width="202.231"
         height="17.8882"
@@ -530,8 +530,8 @@ export default () => (
         y2="352.201"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="white" stopOpacity="0.2" />
-        <stop offset="1" stop-color="white" stopOpacity="0.1" />
+        <stop stopColor="white" stopOpacity="0.2" />
+        <stop offset="1" stopColor="white" stopOpacity="0.1" />
       </linearGradient>
       <clipPath id="clip0_525_5684">
         <rect

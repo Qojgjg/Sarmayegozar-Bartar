@@ -165,3 +165,37 @@ table tr:first-child th:last-child {
     bottom: 20px;
   }
 }
+
+.table-bg {
+  background-image: url(./assets/svg/TableBg.svg);
+  background-size: cover;
+  left: -0.5px;
+}
+.table-bg2 {
+  background-image: url(./assets/svg/TableBg2.svg);
+  background-size: cover;
+}
+
+.plan-detail-anime {
+  position: relative;
+  animation: planAnime 0.3s linear;
+}
+
+@keyframes planAnime {
+  0% {
+    opacity: 0.9;
+    bottom: 10px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 0px;
+  }
+}
+
+.hover-icon:hover .icon-hidden {
+  display: none;
+}
+
+.hover-icon:hover .icon-show {
+  display: block;
+}

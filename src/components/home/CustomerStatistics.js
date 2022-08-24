@@ -14,7 +14,7 @@ import BGPlay from "../../assets/svg/BGPlay";
 const CustomerStatistics = () => {
   return (
     <>
-      <section className="w-full flex justify-center gap-[24px] mt-[95px] mb-[76px] px-[72px]">
+      <section className="w-full h-[371px] flex justify-center gap-[24px] mt-[95px] mb-[76px] px-[72px]">
         <div>
           <div className="w-[636px] h-[285px] relative bg-white rounded-[20px] shadow-[5px_5px_40px_rgba(0,0,0,0.05)] p-[30px] pb-[56px]">
             <p className="text-center text-xl font-extrabold text-secondary-bg-color">
@@ -45,7 +45,7 @@ const CustomerStatistics = () => {
               </div>
             </div>
           </div>
-          <button className="w-full bg-primary-btn-color text-primary-bg-color hover:bg-secondary-btn-color transition-all rounded-[10px] mt-[24px] px-[60px] py-[11px]">
+          <button className="w-full h-[62px] bg-primary-btn-color text-primary-bg-color hover:bg-secondary-btn-color transition-all rounded-[10px] mt-[24px] px-[60px] py-[11px]">
             همین حالا به مشتریان ما بپیوندید
           </button>
         </div>

@@ -2,8 +2,8 @@ import React from "react";
 
 const TablePlanDetails = () => {
   return (
-    <div className="w-[1252px] bg-[#F5F5F5] rounded-b-[20px] mx-auto px-[63px] py-[90px]">
-      <p>
+    <div className="w-[1252px] bg-[#F5F5F5] relative top-[-1px] leading-[40px] rounded-b-[20px] mx-auto px-[63px] py-[90px]">
+      <p className="text-[#767d80] text-right">
         لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
         از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و
         سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای

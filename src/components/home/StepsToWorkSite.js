@@ -22,7 +22,7 @@ const StepsToWorkSite = () => {
                 <div>اول</div>
               </div>
             </div>
-            <p className="text-xl font-extrabold leading-[40px]">
+            <p className="text-xl font-extrabold leading-[40px] text-primary-btn-color">
               مرحله ثبت نام
             </p>
             <p className="text-[#767D80] font-medium leading-[35px]">
@@ -41,12 +41,12 @@ const StepsToWorkSite = () => {
           </div>
           <div className="w-[396px] h-[460px] relative bg-white rounded-[20px] shadow-[5px_5px_40px_rgba(0,0,0,0.05)] m-[10px] mt-[73px] pt-[100px] pb-[40px] px-[30px]">
             <div className="absolute top-[-13%] left-1/2 -translate-x-1/2 flex flex-col justify-center w-[108px] h-[108px] rounded-full bg-white shadow-[5px_5px_40px_rgba(0,0,0,0.05)]">
-              <div className="text-center text-xl leading-[30px]">
+              <div className="text-center text-xl font-semibold leading-[30px]">
                 <div>مرحله</div>
                 <div>دوم</div>
               </div>
             </div>
-            <p className="text-xl font-extrabold leading-[40px]">
+            <p className="text-xl font-extrabold leading-[40px] text-primary-btn-color">
               مرحله مهر تایید
             </p>
             <p className="text-[#767D80] font-medium leading-[35px]">
@@ -65,12 +65,12 @@ const StepsToWorkSite = () => {
           </div>
           <div className="w-[396px] h-[460px] relative bg-white rounded-[20px] shadow-[5px_5px_40px_rgba(0,0,0,0.05)] m-[10px] mt-[73px] pt-[100px] pb-[40px] px-[30px]">
             <div className="absolute top-[-13%] left-1/2 -translate-x-1/2 flex flex-col justify-center w-[108px] h-[108px] rounded-full bg-white shadow-[5px_5px_40px_rgba(0,0,0,0.05)]">
-              <div className="text-center text-xl leading-[30px]">
+              <div className="text-center text-xl font-extrabold leading-[30px]">
                 <div>مرحله</div>
                 <div>سوم</div>
               </div>
             </div>
-            <p className="text-xl font-extrabold leading-[40px]">
+            <p className="text-xl font-extrabold leading-[40px] text-primary-btn-color">
               مرحله لایو ترید
             </p>
             <p className="text-[#767D80] font-medium leading-[35px]">

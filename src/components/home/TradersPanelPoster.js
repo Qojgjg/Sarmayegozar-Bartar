@@ -9,12 +9,12 @@ const TradersPanelPoster = () => {
             <p className="font-extrabold">پنل حرفه ای</p>
             <p className="font-light">مخصوص تریدر ها</p>
           </h4>
-          <p className="w-[636px] mb-[30px]">
+          <p className="w-[636px] text-[#767d80] text-[19px] leading-[40px] mb-[30px]">
             سرمایه گذار برتر در راستای تامین سرمایه معامله گران برای ترید در
             بازارهای مالی با حداقل ریسک ممکن تشکیل شده و در این راه خدماتی را به
             تریدرها ارائه میکند.
           </p>
-          <button className="bg-primary-btn-color hover:bg-secondary-btn-color text-white transition-all rounded-[10px] px-[60px] py-[11px]">
+          <button className="w-[237px] h-[62px] bg-primary-btn-color hover:bg-secondary-btn-color text-white transition-all rounded-[10px] px-[60px] py-[11px]">
             ورود به پنل
           </button>
         </div>

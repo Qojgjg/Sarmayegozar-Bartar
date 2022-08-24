@@ -11,7 +11,7 @@ import PhoneCalling from "../assets/svg/PhoneCalling";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-primary-bg-color px-[72px] pt-10 pb-[87px]">
+    <footer className="w-full bg-primary-bg-color px-[72px] pt-10 pb-[16px]">
       <div className="flex justify-between mb-[40px]">
         <div className="flex items-center">
           <SiteLogoVertical />
@@ -19,7 +19,7 @@ const Footer = () => {
             <p className="text-sm font-extrabold mb-[7px]">
               سرمایه گذار برتر | تامین سرمایه معامله گران
             </p>
-            <p className="w-[697px] text-sm leading-[35px] font-medium">
+            <p className="w-[697px] text-[#8f8f8f] text-sm leading-[35px] font-medium">
               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
               استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
               در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
@@ -106,23 +106,53 @@ const Footer = () => {
             همراه ما باشید!
           </div>
           <div className="flex gap-[30px] mb-[51px]">
-            <a href="#">
-              <Twiter />
+            <a href="#" className="hover-icon">
+              <div className="icon-hidden">
+                <Twiter />
+              </div>
+              <div className="hidden icon-show">
+                <Twiter color="#0098FF" />
+              </div>
             </a>
-            <a href="#">
-              <Linkedin />
+            <a href="#" className="hover-icon">
+              <div className="icon-hidden">
+                <Linkedin />
+              </div>
+              <div className="hidden icon-show">
+                <Linkedin color="#0098FF" />
+              </div>
             </a>
-            <a href="#">
-              <WhatsApp />
+            <a href="#" className="hover-icon">
+              <div className="icon-hidden">
+                <WhatsApp />
+              </div>
+              <div className="hidden icon-show">
+                <WhatsApp color="#0098FF" />
+              </div>
             </a>
-            <a href="#">
-              <Instagram />
+            <a href="#" className="hover-icon">
+              <div className="icon-hidden">
+                <Instagram />
+              </div>
+              <div className="hidden icon-show">
+                <Instagram color="#0098FF" />
+              </div>
             </a>
-            <a href="#">
-              <Facebooke />
+            <a href="#" className="hover-icon">
+              <div className="icon-hidden">
+                <Facebooke />
+              </div>
+              <div className="hidden icon-show">
+                <Facebooke color="#0098FF" />
+              </div>
             </a>
-            <a href="#">
-              <Youtube />
+            <a href="#" className="hover-icon">
+              <div className="icon-hidden">
+                <Youtube />
+              </div>
+              <div className="hidden icon-show">
+                <Youtube color="#0098FF" />
+              </div>
             </a>
           </div>
           <div className="flex justify-between items-center bg-white rounded-[20px] shadow-[5px_5px_40px_rgba(0,0,0,0.05)] p-[17px]">

@@ -139,7 +139,7 @@ const Navbar = () => {
           >
             <User /> <span>ورود / ثبت نام</span>
           </button>
-          <button className="border border-white rounded-[10px] px-5 py-[5px]">
+          <button className="border border-white font-light rounded-[10px] px-[9px] py-[5px]">
             FA
           </button>
         </div>

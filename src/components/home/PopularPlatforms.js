@@ -6,12 +6,12 @@ import "swiper/css/navigation";
 
 const PopularPlatforms = () => {
   return (
-    <div className="w-full mb-[113px] px-[41px]">
+    <div className="w-full mb-[83px] px-[41px]">
       <h4 className="text-center text-5xl leading-[70px] text-secondary-bg-color mb-[14px]">
         <p className="font-extrabold">محبوب ترین</p>
         <p className="font-light">پلتفرم های ترید</p>
       </h4>
-      <p className="w-[636px] text-center mx-auto text-[#767D80] text-[19px] font-medium leading-[40px] mb-[30px]">
+      <p className="w-[650px] text-center mx-auto text-[#767D80] text-[19px] font-medium leading-[40px]">
         سرمایه گذار برتر در راستای تامین سرمایه معامله گران برای ترید در
         بازارهای مالی با حداقل ریسک ممکن تشکیل شده و در این راه خدماتی را به
         تریدرها ارائه میکند.
@@ -23,10 +23,10 @@ const PopularPlatforms = () => {
         slidesPerView={5}
         spaceBetween={10}
         modules={[Navigation]}
-        className="w-full"
+        className="w-full bg-primary-bg-color py-10"
       >
-        <SwiperSlide className="ml-[10px]">
-          <div className="w-[251px] h-[82px] bg-white rounded-[20px] flex flex-col justify-center shadow-[5px_5px_40px_rgba(0,0,0,0.05)]">
+        <SwiperSlide className="ml-[10px] mr-[8px]">
+          <div className="w-[251px] h-[82px] bg-white rounded-[20px] flex flex-col justify-center shadow-[5px_5px_40px_rgba(0,0,0,0.05)] my-[30px]">
             <img
               className="w-[77px] mx-auto"
               src={require("../../assets/img/FusionMarketsLogo.png")}
@@ -35,7 +35,7 @@ const PopularPlatforms = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide className="ml-[10px]">
-          <div className="w-[251px] h-[82px] bg-white rounded-[20px] flex flex-col justify-center shadow-[5px_5px_40px_rgba(0,0,0,0.05)]">
+          <div className="w-[251px] h-[82px] bg-white rounded-[20px] flex flex-col justify-center shadow-[5px_5px_40px_rgba(0,0,0,0.05)] my-[30px]">
             <img
               className="w-[133px] mx-auto"
               src={require("../../assets/img/eightcapLogo.png")}
@@ -44,7 +44,7 @@ const PopularPlatforms = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide className="ml-[10px]">
-          <div className="w-[251px] h-[82px] bg-white rounded-[20px] flex flex-col justify-center shadow-[5px_5px_40px_rgba(0,0,0,0.05)]">
+          <div className="w-[251px] h-[82px] bg-white rounded-[20px] flex flex-col justify-center shadow-[5px_5px_40px_rgba(0,0,0,0.05)] my-[30px]">
             <img
               className="w-[147px] mx-auto"
               src={require("../../assets/img/ICMarketLogo.png")}
@@ -53,7 +53,7 @@ const PopularPlatforms = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide className="ml-[10px]">
-          <div className="w-[251px] h-[82px] bg-white rounded-[20px] flex flex-col justify-center shadow-[5px_5px_40px_rgba(0,0,0,0.05)]">
+          <div className="w-[251px] h-[82px] bg-white rounded-[20px] flex flex-col justify-center shadow-[5px_5px_40px_rgba(0,0,0,0.05)] my-[30px]">
             <img
               className="w-[153px] mx-auto"
               src={require("../../assets/img/roboForexLogo 1.png")}
@@ -62,7 +62,7 @@ const PopularPlatforms = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide className="ml-[10px]">
-          <div className="w-[251px] h-[82px] bg-white rounded-[20px] flex flex-col justify-center shadow-[5px_5px_40px_rgba(0,0,0,0.05)]">
+          <div className="w-[251px] h-[82px] bg-white rounded-[20px] flex flex-col justify-center shadow-[5px_5px_40px_rgba(0,0,0,0.05)] my-[30px]">
             <img
               className="w-[65px] mx-auto"
               src={require("../../assets/img/Exness-Logo.png")}
