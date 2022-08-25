@@ -30,7 +30,15 @@ const InfoHeader = () => {
               میخورد.
             </p>
           </div>
-          <div className="absolute left-1/2 -translate-x-1/2 bottom-[-23%]">
+          <div
+            className="absolute left-1/2 -translate-x-1/2 bottom-[-23%] cursor-pointer"
+            onClick={() =>
+              window.scrollTo({
+                top: 1000,
+                behavior: "smooth",
+              })
+            }
+          >
             <ButtonOfScrollTo />
           </div>
         </div>
@@ -39,4 +47,4 @@ const InfoHeader = () => {
   );
 };
 
-export default InfoHeader
+export default InfoHeader;

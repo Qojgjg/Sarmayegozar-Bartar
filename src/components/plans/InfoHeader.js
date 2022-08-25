@@ -32,111 +32,123 @@ const InfoHeader = () => {
             </p>
             <div className=" w-[788px] h-[326px] m-auto">
               <DashedBorderPlans />
-              <div 
-                onClick={() => setChooseTab({
-                  ...chooseTab,
-                  tabOne: true,
-                  tabTwo: false,
-                  tabThree: false,
-                  tabFour: false,
-                  tabFive: false,
-                  tabSix: false
-                })}
+              <div
+                onClick={() =>
+                  setChooseTab({
+                    ...chooseTab,
+                    tabOne: true,
+                    tabTwo: false,
+                    tabThree: false,
+                    tabFour: false,
+                    tabFive: false,
+                    tabSix: false,
+                  })
+                }
                 className="absolute top-[133px] left-[711px] cursor-pointer"
               >
-                {chooseTab.tabOne ? 
+                {chooseTab.tabOne ?
                   <PlansIconFill color="black" bgColor="white" />
-                 : 
+                  :
                   <PlansIconFill />
                 }
               </div>
-              <div 
-                onClick={() => setChooseTab({
-                  ...chooseTab,
-                  tabOne: false,
-                  tabTwo: true,
-                  tabThree: false,
-                  tabFour: false,
-                  tabFive: false,
-                  tabSix: false
-                })}
+              <div
+                onClick={() =>
+                  setChooseTab({
+                    ...chooseTab,
+                    tabOne: false,
+                    tabTwo: true,
+                    tabThree: false,
+                    tabFour: false,
+                    tabFive: false,
+                    tabSix: false,
+                  })
+                }
                 className="absolute top-[133px] left-[496px] cursor-pointer"
               >
                 {chooseTab.tabTwo ? 
                   <PlansIconFill color="black" bgColor="white" />
-                 : 
+                  : 
                   <PlansIconFill />
                 }
               </div>
-              <div 
-                onClick={() => setChooseTab({
-                  ...chooseTab,
-                  tabOne: false,
-                  tabTwo: false,
-                  tabThree: true,
-                  tabFour: false,
-                  tabFive: false,
-                  tabSix: false
-                })}
+              <div
+                onClick={() =>
+                  setChooseTab({
+                    ...chooseTab,
+                    tabOne: false,
+                    tabTwo: false,
+                    tabThree: true,
+                    tabFour: false,
+                    tabFive: false,
+                    tabSix: false,
+                  })
+                }
                 className="absolute top-[458.48px] left-[281px] cursor-pointer"
               >
                 {chooseTab.tabThree ? 
                   <PlansIconFill color="black" bgColor="white" />
-                 : 
+                  :
                   <PlansIconFill />
                 }
               </div>
               <div
-                onClick={() => setChooseTab({
-                  ...chooseTab,
-                  tabOne: false,
-                  tabTwo: false,
-                  tabThree: false,
-                  tabFour: true,
-                  tabFive: false,
-                  tabSix: false
-                })}
+                onClick={() =>
+                  setChooseTab({
+                    ...chooseTab,
+                    tabOne: false,
+                    tabTwo: false,
+                    tabThree: false,
+                    tabFour: true,
+                    tabFive: false,
+                    tabSix: false,
+                  })
+                }
                 className="absolute top-[458.48px] left-[711px] cursor-pointer"
               >
-                {chooseTab.tabFour ? 
+                {chooseTab.tabFour ?
                   <PlansIconFill color="black" bgColor="white" />
-                 : 
+                  : 
                   <PlansIconFill />
                 }
               </div>
               <div
-                onClick={() => setChooseTab({
-                  ...chooseTab,
-                  tabOne: false,
-                  tabTwo: false,
-                  tabThree: false,
-                  tabFour: false,
-                  tabFive: true,
-                  tabSix: false
-                })}
+                onClick={() =>
+                  setChooseTab({
+                    ...chooseTab,
+                    tabOne: false,
+                    tabTwo: false,
+                    tabThree: false,
+                    tabFour: false,
+                    tabFive: true,
+                    tabSix: false,
+                  })
+                }
                 className="absolute top-[458.48px] left-[496px] cursor-pointer"
               >
                 {chooseTab.tabFive ? 
                   <PlansIconFill color="black" bgColor="white" />
-                 : 
+                  : 
                   <PlansIconFill />
                 }
               </div>
               <div
-                onClick={() => setChooseTab({
-                  ...chooseTab,
-                  tabOne: false,
-                  tabTwo: false,
-                  tabThree: false,
-                  tabFour: false,
-                  tabFive: false,
-                  tabSix: true
-                })}
+                onClick={() =>
+                  setChooseTab({
+                    ...chooseTab,
+                    tabOne: false,
+                    tabTwo: false,
+                    tabThree: false,
+                    tabFour: false,
+                    tabFive: false,
+                    tabSix: true,
+                  })
+                }
                 className="absolute top-[133px] left-[281px] cursor-pointer"
               >
                 {chooseTab.tabSix ? 
                   <PlansIconFill color="black" bgColor="white" />
-                 : 
+                  : 
                   <PlansIconFill />
                 }
               </div>
@@ -152,7 +164,15 @@ const InfoHeader = () => {
               </p>
             </div>
           </div>
-          <div className="absolute left-1/2 -translate-x-1/2 top-[615px]">
+          <div
+            className="absolute left-1/2 -translate-x-1/2 top-[615px] cursor-pointer"
+            onClick={() =>
+              window.scrollTo({
+                top: 970,
+                behavior: "smooth",
+              })
+            }
+          >
             <ButtonOfScrollTo />
           </div>
         </div>

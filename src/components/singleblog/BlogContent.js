@@ -44,23 +44,53 @@ const BlogContent = () => {
           اشتراک گذاری در شبکه های اجتماعی
         </div>
         <div className="flex items-center gap-[20px]">
-          <a href="#">
-            <Twiter />
+          <a href="#" className="hover-icon">
+            <div className="icon-hidden">
+              <Twiter />
+            </div>
+            <div className="hidden icon-show">
+              <Twiter color="#0098FF" />
+            </div>
           </a>
-          <a href="#">
-            <Linkedin />
+          <a href="#" className="hover-icon">
+            <div className="icon-hidden">
+              <Linkedin />
+            </div>
+            <div className="hidden icon-show">
+              <Linkedin color="#0098FF" />
+            </div>
           </a>
-          <a href="#">
-            <WhatsApp />
+          <a href="#" className="hover-icon">
+            <div className="icon-hidden">
+              <WhatsApp />
+            </div>
+            <div className="hidden icon-show">
+              <WhatsApp color="#0098FF" />
+            </div>
           </a>
-          <a href="#">
-            <Instagram />
+          <a href="#" className="hover-icon">
+            <div className="icon-hidden">
+              <Instagram />
+            </div>
+            <div className="hidden icon-show">
+              <Instagram color="#0098FF" />
+            </div>
           </a>
-          <a href="#">
-            <Facebooke />
+          <a href="#" className="hover-icon">
+            <div className="icon-hidden">
+              <Facebooke />
+            </div>
+            <div className="hidden icon-show">
+              <Facebooke color="#0098FF" />
+            </div>
           </a>
-          <a href="#">
-            <Youtube />
+          <a href="#" className="hover-icon">
+            <div className="icon-hidden">
+              <Youtube />
+            </div>
+            <div className="hidden icon-show">
+              <Youtube color="#0098FF" />
+            </div>
           </a>
         </div>
       </div>

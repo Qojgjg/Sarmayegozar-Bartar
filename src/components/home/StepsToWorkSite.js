@@ -1,14 +1,19 @@
 import React from "react";
 import WorkWithSiteCover from "../../assets/svg/WorkWithSiteCover";
+import RightWaveIcon from "../../assets/svg/RightWaveIcon";
+import LeftWaveIcon from "../../assets/svg/LeftWaveIcon";
 
 const StepsToWorkSite = () => {
   return (
-    <div className="w-full mb-[92px] px-[72px]">
+    <div className="w-full relative mb-[92px] px-[72px]">
       <div>
         <h4 className="text-center text-[34px] text-secondary-bg-color">
           <p className="font-extrabold">مراحل کار با سایت</p>
           <p className="font-light">سرمایه گذار برتر</p>
         </h4>
+      </div>
+      <div className="absolute top-[-15px] right-0">
+        <RightWaveIcon />
       </div>
       <div className="grid grid-cols-3">
         <div className="col-span-1 w-full relative mt-[130px]">
@@ -83,6 +88,9 @@ const StepsToWorkSite = () => {
             </p>
           </div>
         </div>
+      </div>
+      <div className="absolute bottom-[-125px] left-0">
+        <LeftWaveIcon />
       </div>
     </div>
   );

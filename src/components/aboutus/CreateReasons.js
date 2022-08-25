@@ -50,7 +50,7 @@ const CreateReasons = () => {
           {isRulesOpen.ruleOne ? <ArrowDown /> : <ArrowTop />}
         </div>
         {isRulesOpen.ruleOne ? (
-          <div className="text-[#767D80] font-medium leading-[35px] border-t mt-[20px] pt-[20px]">
+          <div className="text-[#767D80] font-medium leading-[35px] border-t mt-[20px] pt-[20px] plan-detail-anime">
             سرمایه گذار برتر در راستای تامین سرمایه معامله گران برای ترید در
             بازارهای مالی با حداقل ریسک ممکن تشکیل شده و در این راه خدماتی را به
             تریدرها ارائه میکند سرمایه گذار برتر در راستای تامین سرمایه معامله
@@ -74,7 +74,7 @@ const CreateReasons = () => {
           {isRulesOpen.ruleTwo ? <ArrowDown /> : <ArrowTop />}
         </div>
         {isRulesOpen.ruleTwo ? (
-          <div className="text-[#767D80] font-medium leading-[35px] border-t mt-[20px] pt-[20px]">
+          <div className="text-[#767D80] font-medium leading-[35px] border-t mt-[20px] pt-[20px] plan-detail-anime">
             سرمایه گذار برتر در راستای تامین سرمایه معامله گران برای ترید در
             بازارهای مالی با حداقل ریسک ممکن تشکیل شده و در این راه خدماتی را به
             تریدرها ارائه میکند سرمایه گذار برتر در راستای تامین سرمایه معامله
@@ -89,4 +89,4 @@ const CreateReasons = () => {
   );
 };
 
-export default CreateReasons
+export default CreateReasons;

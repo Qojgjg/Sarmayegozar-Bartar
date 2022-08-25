@@ -1,10 +1,13 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const PopularQuestions = () => {
   const [isQuestionOne, SetIsQuestionOne] = useState(true);
   const [isQuestionTwo, SetIsQuestionTwo] = useState(false);
   const [isQuestionThree, SetIsQuestionThree] = useState(false);
   const [isQuestionFour, SetIsQuestionFour] = useState(false);
+
+  const navigate = useNavigate();
 
   return (
     <section className="w-full mb-[109px] px-[72px]">
@@ -13,7 +16,10 @@ const PopularQuestions = () => {
           سوالات <span className="font-light">متداول</span>
         </p>
         <div className="w-full h-[1px] bg-[#E8E8E8]" />
-        <button className="text-[#C7C7C7] border rounded-[10px] whitespace-nowrap px-[30px] py-[18px]">
+        <button
+          onClick={() => navigate("rules")}
+          className="text-[#C7C7C7] border hover:text-primary-btn-color hover:border-primary-btn-color transition-all rounded-[10px] whitespace-nowrap px-[30px] py-[18px]"
+        >
           سوالات بیشتر
         </button>
       </div>

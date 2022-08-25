@@ -1,7 +1,10 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import BlogCard from "../BlogCard";
 
 const BlogContent = () => {
+  const navigate = useNavigate();
+
   return (
     <>
       <section className="w-full mt-[72px] px-[72px]">
@@ -10,7 +13,10 @@ const BlogContent = () => {
             مطالب <span className="font-light">بلاگ</span>
           </p>
           <div className="w-full h-[1px] bg-[#E8E8E8]" />
-          <button className="text-[#C7C7C7] border rounded-[10px] whitespace-nowrap px-[30px] py-[18px]">
+          <button
+            onClick={() => navigate("/blogs")}
+            className="text-[#C7C7C7] border hover:text-primary-btn-color hover:border-primary-btn-color transition-all rounded-[10px] whitespace-nowrap px-[30px] py-[18px]"
+          >
             مطالب بیشتر
           </button>
         </div>

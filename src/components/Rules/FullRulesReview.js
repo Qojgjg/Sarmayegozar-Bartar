@@ -61,7 +61,7 @@ const FullRulesReview = () => {
             {isRulesOpen.ruleOne ? <ArrowDown /> : <ArrowTop />}
           </div>
           {isRulesOpen.ruleOne ? (
-            <div className="text-[#767D80] font-medium leading-[35px] border-t mt-[20px] pt-[20px]">
+            <div className="text-[#767D80] font-medium leading-[35px] border-t mt-[20px] pt-[20px] plan-detail-anime">
               سرمایه گذار برتر در راستای تامین سرمایه معامله گران برای ترید در
               بازارهای مالی با حداقل ریسک ممکن تشکیل شده و در این راه خدماتی را
               به تریدرها ارائه میکند سرمایه گذار برتر در راستای تامین سرمایه
@@ -85,7 +85,7 @@ const FullRulesReview = () => {
             {isRulesOpen.ruleTwo ? <ArrowDown /> : <ArrowTop />}
           </div>
           {isRulesOpen.ruleTwo ? (
-            <div className="text-[#767D80] font-medium leading-[35px] border-t mt-[20px] pt-[20px]">
+            <div className="text-[#767D80] font-medium leading-[35px] border-t mt-[20px] pt-[20px] plan-detail-anime">
               سرمایه گذار برتر در راستای تامین سرمایه معامله گران برای ترید در
               بازارهای مالی با حداقل ریسک ممکن تشکیل شده و در این راه خدماتی را
               به تریدرها ارائه میکند سرمایه گذار برتر در راستای تامین سرمایه
@@ -112,7 +112,7 @@ const FullRulesReview = () => {
             {isRulesOpen.ruleThree ? <ArrowDown /> : <ArrowTop />}
           </div>
           {isRulesOpen.ruleThree ? (
-            <div className="text-[#767D80] font-medium leading-[35px] border-t mt-[20px] pt-[20px]">
+            <div className="text-[#767D80] font-medium leading-[35px] border-t mt-[20px] pt-[20px] plan-detail-anime">
               سرمایه گذار برتر در راستای تامین سرمایه معامله گران برای ترید در
               بازارهای مالی با حداقل ریسک ممکن تشکیل شده و در این راه خدماتی را
               به تریدرها ارائه میکند سرمایه گذار برتر در راستای تامین سرمایه
@@ -139,7 +139,7 @@ const FullRulesReview = () => {
             {isRulesOpen.ruleFour ? <ArrowDown /> : <ArrowTop />}
           </div>
           {isRulesOpen.ruleFour ? (
-            <div className="text-[#767D80] font-medium leading-[35px] border-t mt-[20px] pt-[20px]">
+            <div className="text-[#767D80] font-medium leading-[35px] border-t mt-[20px] pt-[20px] plan-detail-anime">
               سرمایه گذار برتر در راستای تامین سرمایه معامله گران برای ترید در
               بازارهای مالی با حداقل ریسک ممکن تشکیل شده و در این راه خدماتی را
               به تریدرها ارائه میکند سرمایه گذار برتر در راستای تامین سرمایه
@@ -166,7 +166,7 @@ const FullRulesReview = () => {
             {isRulesOpen.ruleFive ? <ArrowDown /> : <ArrowTop />}
           </div>
           {isRulesOpen.ruleFive ? (
-            <div className="text-[#767D80] font-medium leading-[35px] border-t mt-[20px] pt-[20px]">
+            <div className="text-[#767D80] font-medium leading-[35px] border-t mt-[20px] pt-[20px] plan-detail-anime">
               سرمایه گذار برتر در راستای تامین سرمایه معامله گران برای ترید در
               بازارهای مالی با حداقل ریسک ممکن تشکیل شده و در این راه خدماتی را
               به تریدرها ارائه میکند سرمایه گذار برتر در راستای تامین سرمایه
@@ -193,7 +193,7 @@ const FullRulesReview = () => {
             {isRulesOpen.ruleSix ? <ArrowDown /> : <ArrowTop />}
           </div>
           {isRulesOpen.ruleSix ? (
-            <div className="text-[#767D80] font-medium leading-[35px] border-t mt-[20px] pt-[20px]">
+            <div className="text-[#767D80] font-medium leading-[35px] border-t mt-[20px] pt-[20px] plan-detail-anime">
               سرمایه گذار برتر در راستای تامین سرمایه معامله گران برای ترید در
               بازارهای مالی با حداقل ریسک ممکن تشکیل شده و در این راه خدماتی را
               به تریدرها ارائه میکند سرمایه گذار برتر در راستای تامین سرمایه
@@ -220,7 +220,7 @@ const FullRulesReview = () => {
             {isRulesOpen.ruleSeven ? <ArrowDown /> : <ArrowTop />}
           </div>
           {isRulesOpen.ruleSeven ? (
-            <div className="text-[#767D80] font-medium leading-[35px] border-t mt-[20px] pt-[20px]">
+            <div className="text-[#767D80] font-medium leading-[35px] border-t mt-[20px] pt-[20px] plan-detail-anime">
               سرمایه گذار برتر در راستای تامین سرمایه معامله گران برای ترید در
               بازارهای مالی با حداقل ریسک ممکن تشکیل شده و در این راه خدماتی را
               به تریدرها ارائه میکند سرمایه گذار برتر در راستای تامین سرمایه
@@ -247,7 +247,7 @@ const FullRulesReview = () => {
             {isRulesOpen.ruleEight ? <ArrowDown /> : <ArrowTop />}
           </div>
           {isRulesOpen.ruleEight ? (
-            <div className="text-[#767D80] font-medium leading-[35px] border-t mt-[20px] pt-[20px]">
+            <div className="text-[#767D80] font-medium leading-[35px] border-t mt-[20px] pt-[20px] plan-detail-anime">
               سرمایه گذار برتر در راستای تامین سرمایه معامله گران برای ترید در
               بازارهای مالی با حداقل ریسک ممکن تشکیل شده و در این راه خدماتی را
               به تریدرها ارائه میکند سرمایه گذار برتر در راستای تامین سرمایه
@@ -274,7 +274,7 @@ const FullRulesReview = () => {
             {isRulesOpen.ruleNine ? <ArrowDown /> : <ArrowTop />}
           </div>
           {isRulesOpen.ruleNine ? (
-            <div className="text-[#767D80] font-medium leading-[35px] border-t mt-[20px] pt-[20px]">
+            <div className="text-[#767D80] font-medium leading-[35px] border-t mt-[20px] pt-[20px] plan-detail-anime">
               سرمایه گذار برتر در راستای تامین سرمایه معامله گران برای ترید در
               بازارهای مالی با حداقل ریسک ممکن تشکیل شده و در این راه خدماتی را
               به تریدرها ارائه میکند سرمایه گذار برتر در راستای تامین سرمایه
@@ -301,7 +301,7 @@ const FullRulesReview = () => {
             {isRulesOpen.ruleTen ? <ArrowDown /> : <ArrowTop />}
           </div>
           {isRulesOpen.ruleTen ? (
-            <div className="text-[#767D80] font-medium leading-[35px] border-t mt-[20px] pt-[20px]">
+            <div className="text-[#767D80] font-medium leading-[35px] border-t mt-[20px] pt-[20px] plan-detail-anime">
               سرمایه گذار برتر در راستای تامین سرمایه معامله گران برای ترید در
               بازارهای مالی با حداقل ریسک ممکن تشکیل شده و در این راه خدماتی را
               به تریدرها ارائه میکند سرمایه گذار برتر در راستای تامین سرمایه
@@ -317,4 +317,4 @@ const FullRulesReview = () => {
   );
 };
 
-export default FullRulesReview
+export default FullRulesReview;

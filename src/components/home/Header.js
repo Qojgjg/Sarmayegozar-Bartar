@@ -1,10 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import HeaderShadow from "../../assets/svg/HeaderShadow";
 import HeaderTradingFrame from "../../assets/svg/HeaderTradingFrame";
 import WordBig from "../../assets/svg/WordBig";
 import WordLittle from "../../assets/svg/WordLittle";
 
 const Header = () => {
+  const navigate = useNavigate();
+
   return (
     <>
       <div className="w-full h-[525px] flex justify-between bg-secondary-bg-color text-white px-[72px]">
@@ -23,10 +26,16 @@ const Header = () => {
               به تریدرها ارائه میکند.
             </p>
             <div className="flex items-center mt-[30px] mb-[53px] gap-[24px]">
-              <button className="w-[237px] h-[62px] bg-primary-btn-color hover:bg-secondary-btn-color transition-all rounded-[10px] py-[11px]">
+              <button
+                onClick={() => navigate("/plans")}
+                className="w-[237px] h-[62px] bg-primary-btn-color hover:bg-secondary-btn-color transition-all rounded-[10px] py-[11px]"
+              >
                 مشاهده پلن ها
               </button>
-              <button className="w-[250px] h-[62px] border border-white rounded-[10px] hover:bg-primary-bg-color hover:text-secondary-bg-color transition-all py-[11px]">
+              <button
+                onClick={() => navigate("/aboutus")}
+                className="w-[250px] h-[62px] border border-white rounded-[10px] hover:bg-primary-bg-color hover:text-secondary-bg-color transition-all py-[11px]"
+              >
                 درباره سرمایه گذار برتر
               </button>
             </div>

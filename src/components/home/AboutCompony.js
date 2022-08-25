@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const AboutCompony = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="grid grid-cols-2 mt-[90px] px-[72px]">
       <div className="col-span-1">
@@ -19,7 +22,12 @@ const AboutCompony = () => {
           بازارهای مالی با حداقل ریسک ممکن تشکیل شده و در این راه خدماتی را به
           تریدرها ارائه میکند.
         </p>
-        <button className="h-[62px] text-white bg-primary-btn-color hover:bg-secondary-btn-color transition-all rounded-[10px] py-[11px] px-[60px] mt-[30px]">بیشتر بخوانید</button>
+        <button
+          onClick={() => navigate("/aboutus")}
+          className="h-[62px] text-white bg-primary-btn-color hover:bg-secondary-btn-color transition-all rounded-[10px] py-[11px] px-[60px] mt-[30px]"
+        >
+          بیشتر بخوانید
+        </button>
       </div>
     </div>
   );

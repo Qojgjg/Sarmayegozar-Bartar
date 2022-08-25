@@ -1,9 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const BlogCard = () => {
+  const navigate = useNavigate();
   return (
-    <div className="w-full bg-white rounded-[20px] shadow-[5px_5px_40px_rgba(0,0,0,0.05)] p-[15px]">
+    <div
+      onClick={() => navigate("/blogs/1")}
+      className="w-full bg-white rounded-[20px] shadow-[5px_5px_40px_rgba(0,0,0,0.05)] p-[15px] cursor-pointer relative hover:bottom-[20px] card-anime"
+    >
       <img
         className="w-full rounded-[10px]"
         src={require("../assets/img/BlogImage.png")}

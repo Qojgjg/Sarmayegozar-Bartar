@@ -58,47 +58,47 @@ const Footer = () => {
       <div className="flex justify-between border-y py-10">
         <ul className="list-disc text-sm space-y-[17px]">
           <div className="font-extrabold">با سرمایه گذار برتر</div>
-          <li className="font-bold text-[#8F8F8F] hover:text-[#0098FF] transition-all">
+          <li className="font-bold text-[#8F8F8F] hover:text-[#0098FF] transition-all list-disc mr-4">
             <a href="#">وبلاگ سرمایه گذار برتر</a>
           </li>
-          <li className="font-bold text-[#8F8F8F] hover:text-[#0098FF] transition-all">
+          <li className="font-bold text-[#8F8F8F] hover:text-[#0098FF] transition-all list-disc mr-4">
             <a href="#">همکاری با سرمایه گذار برتر</a>
           </li>
-          <li className="font-bold text-[#8F8F8F] hover:text-[#0098FF] transition-all">
+          <li className="font-bold text-[#8F8F8F] hover:text-[#0098FF] transition-all list-disc mr-4">
             <a href="#">درباره سرمایه گذار برتر</a>
           </li>
-          <li className="font-bold text-[#8F8F8F] hover:text-[#0098FF] transition-all">
+          <li className="font-bold text-[#8F8F8F] hover:text-[#0098FF] transition-all list-disc mr-4">
             <a href="#">تماس با سرمایه گذار برتر</a>
           </li>
         </ul>
         <ul className="list-disc text-sm space-y-[17px]">
           <div className="font-extrabold">لینک های کاربردی</div>
-          <li className="font-bold text-[#8F8F8F] hover:text-[#0098FF] transition-all">
-            <Link to="/">ورود و ثبت نام</Link>
+          <li className="font-bold text-[#8F8F8F] hover:text-[#0098FF] transition-all list-disc mr-4">
+            <Link to="/login">ورود و ثبت نام</Link>
           </li>
-          <li className="font-bold text-[#8F8F8F] hover:text-[#0098FF] transition-all">
+          <li className="font-bold text-[#8F8F8F] hover:text-[#0098FF] transition-all list-disc mr-4">
             <Link to="/">تعرفه ها</Link>
           </li>
-          <li className="font-bold text-[#8F8F8F] hover:text-[#0098FF] transition-all">
+          <li className="font-bold text-[#8F8F8F] hover:text-[#0098FF] transition-all list-disc mr-4">
             <Link to="/">کانال تلگرام</Link>
           </li>
-          <li className="font-bold text-[#8F8F8F] hover:text-[#0098FF] transition-all">
+          <li className="font-bold text-[#8F8F8F] hover:text-[#0098FF] transition-all list-disc mr-4">
             <Link to="/">جستجو در سایت</Link>
           </li>
         </ul>
         <ul className="list-disc text-sm space-y-[17px]">
           <div className="font-extrabold">دسترسی سریع</div>
-          <li className="font-bold text-[#8F8F8F] hover:text-[#0098FF] transition-all">
+          <li className="font-bold text-[#8F8F8F] hover:text-[#0098FF] transition-all list-disc mr-4">
             <Link to="/">سوالات متداول</Link>
           </li>
-          <li className="font-bold text-[#8F8F8F] hover:text-[#0098FF] transition-all">
+          <li className="font-bold text-[#8F8F8F] hover:text-[#0098FF] transition-all list-disc mr-4">
             <Link to="/">حریم خصوصی</Link>
           </li>
-          <li className="font-bold text-[#8F8F8F] hover:text-[#0098FF] transition-all">
-            <Link to="/">قوانین و مقررات</Link>
+          <li className="font-bold text-[#8F8F8F] hover:text-[#0098FF] transition-all list-disc mr-4">
+            <Link to="/rules">قوانین و مقررات</Link>
           </li>
-          <li className="font-bold text-[#8F8F8F] hover:text-[#0098FF] transition-all">
-            <Link to="/">ثبت شکایات</Link>
+          <li className="font-bold text-[#8F8F8F] hover:text-[#0098FF] transition-all list-disc mr-4">
+            <Link to="/contactus">ثبت شکایات</Link>
           </li>
         </ul>
         <div>

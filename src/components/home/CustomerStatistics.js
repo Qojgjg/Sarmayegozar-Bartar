@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import CustomerStatisticsCover from "../../assets/svg/CustomerStatisticsCover";
 import ReceiptDiscount from "../../assets/svg/ReceiptDiscount";
 import AddUser from "../../assets/svg/AddUser";
@@ -12,6 +13,8 @@ import Play from "../../assets/svg/Play";
 import BGPlay from "../../assets/svg/BGPlay";
 
 const CustomerStatistics = () => {
+  const navigate = useNavigate();
+
   return (
     <>
       <section className="w-full h-[371px] flex justify-center gap-[24px] mt-[95px] mb-[76px] px-[72px]">
@@ -45,7 +48,10 @@ const CustomerStatistics = () => {
               </div>
             </div>
           </div>
-          <button className="w-full h-[62px] bg-primary-btn-color text-primary-bg-color hover:bg-secondary-btn-color transition-all rounded-[10px] mt-[24px] px-[60px] py-[11px]">
+          <button
+            onClick={() => navigate("login")}
+            className="w-full h-[62px] bg-primary-btn-color text-primary-bg-color hover:bg-secondary-btn-color transition-all rounded-[10px] mt-[24px] px-[60px] py-[11px]"
+          >
             همین حالا به مشتریان ما بپیوندید
           </button>
         </div>
